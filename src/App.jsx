@@ -54,37 +54,37 @@ function App() {
 
   return (
     <div
-      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden bg-slate-900 flex justify-center items-start"
+      className="min-h-screen bg-[#1A202C] flex justify-center items-start selection:bg-[#C1440E]/30 selection:text-[#1A202C]"
       onClick={handleBackgroundClick}
     >
-      {/* Maximum width container to mimic mobile app on desktop */}
-      <div className="w-full max-w-md min-h-screen relative shadow-2xl overflow-hidden bg-slate-900">
+      {/* Container - constrained to mobile max-width, mimicking a high-end reader app */}
+      <div className="w-full max-w-[430px] min-h-screen relative shadow-[0_0_80px_-20px_rgba(0,0,0,0.5)] overflow-hidden bg-[#1A202C]">
 
         <HeroHeader title={bookData.title} />
 
-        {/* Overlapping Content Card */}
+        {/* Content Card - slides over header */}
         <div
-          className="relative z-10 mt-[45vh] min-h-[60vh] rounded-t-[2.5rem] pb-32 animate-in slide-in-from-bottom-10 duration-500 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]"
-          style={{ backgroundColor: '#FDFBF7' }}
+          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2.5rem] pb-32 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-[0_-15px_40px_rgba(0,0,0,0.3)]"
+          style={{ backgroundColor: '#F9F7F1' }}
         >
 
-          <main className="px-6 pt-8">
-            {/* Intro Tagline Area (Matches reference) */}
-            <div className="text-center mb-8">
-              <h2 className="text-xl font-bold text-slate-900 leading-snug mb-2 break-keep">
+          <main className="px-7 pt-10">
+            {/* Intro Tagline Area */}
+            <div className="text-center mb-10">
+              <h2 className="text-lg font-bold text-[#2C2C2C] leading-snug mb-3 break-keep font-inter tracking-tight">
                 하루에 단 10분만 투자하여 좋아하는<br />책으로 영어를 정복하세요
               </h2>
-              <div className="w-10 h-1 bg-indigo-500 rounded-full mx-auto opacity-50"></div>
+              <div className="w-12 h-1 bg-[#C1440E] rounded-full mx-auto opacity-80"></div>
             </div>
 
             {/* Chapter Info */}
-            <div className="flex items-center justify-between mb-6 text-xs font-serif text-slate-400 uppercase tracking-widest">
-              <span>Chapter 1</span>
-              <span>Page {currentPage.pageId}</span>
+            <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#C1440E]/10">
+              <span className="text-[10px] font-bold text-[#C1440E] uppercase tracking-[0.2em] font-inter">Chapter 1</span>
+              <span className="text-[10px] font-bold text-[#A0AEC0] uppercase tracking-[0.2em] font-inter">Page {currentPage.pageId}</span>
             </div>
 
             {/* Continuous Text Block */}
-            <div className="font-serif text-[1.125rem] leading-[1.8] text-justify text-slate-800 tracking-wide mb-10">
+            <div className="font-merriweather text-[1.15rem] leading-[2.0] text-justify text-[#4A5568] tracking-normal mb-10">
               {currentPage.sentences.map((sentence) => (
                 <SentenceSegment
                   key={sentence.id}
@@ -112,7 +112,7 @@ function App() {
               ))}
 
               {currentPage.sentences.length === 0 && (
-                <p className="text-center text-slate-400 block py-10 italic">
+                <p className="text-center text-slate-400 block py-10 italic font-merriweather">
                   (No content)
                 </p>
               )}
@@ -120,35 +120,33 @@ function App() {
           </main>
         </div>
 
-        {/* Pagination Floating Bar */}
-        <footer className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-[360px]">
-          <div className="bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl rounded-full px-5 py-3 flex items-center justify-between">
+        {/* Floating Navigation Bar - Glassmorphism */}
+        <footer className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 w-[85%] max-w-[340px]">
+          <div className="bg-[#1A202C]/80 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] rounded-full px-6 py-3.5 flex items-center justify-between group hover:bg-[#1A202C]/90 transition-all">
             <button
               onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
               disabled={currentPageIndex === 0}
               className={`transition-colors flex items-center gap-1 ${currentPageIndex === 0
-                  ? 'text-slate-300 cursor-not-allowed'
-                  : 'text-slate-600 hover:text-indigo-600'
+                  ? 'text-white/20 cursor-not-allowed'
+                  : 'text-white/70 hover:text-[#C1440E]'
                 }`}
             >
-              <ChevronLeft size={22} />
-              <span className="text-sm font-bold">Prev</span>
+              <ChevronLeft size={20} />
             </button>
 
-            <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider">
-              {currentPageIndex + 1} / {totalPages}
+            <span className="text-[10px] font-bold text-white/50 uppercase tracking-[0.2em] font-inter">
+              <span className="text-white">{currentPageIndex + 1}</span> / {totalPages}
             </span>
 
             <button
               onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
               disabled={currentPageIndex === totalPages - 1}
               className={`transition-colors flex items-center gap-1 ${currentPageIndex === totalPages - 1
-                  ? 'text-slate-300 cursor-not-allowed'
-                  : 'text-indigo-600 hover:text-indigo-800'
+                  ? 'text-white/20 cursor-not-allowed'
+                  : 'text-white/70 hover:text-[#C1440E]'
                 }`}
             >
-              <span className="text-sm font-bold">Next</span>
-              <ChevronRight size={22} />
+              <ChevronRight size={20} />
             </button>
           </div>
         </footer>

@@ -32,7 +32,7 @@ const SentenceSegment = ({
                         newParts.push(
                             <span
                                 key={`${vocab.word}-${i}`}
-                                className={`font-bold text-indigo-700 cursor-pointer border-b-2 border-indigo-200 hover:bg-indigo-50 transition-colors mx-0.5 ${activeVocab === vocab ? 'bg-indigo-100 text-indigo-900' : ''}`}
+                                className={`font-bold text-[#C1440E] cursor-pointer border-b border-[#C1440E]/30 hover:bg-[#C1440E]/5 transition-colors mx-0.5 ${activeVocab === vocab ? 'bg-[#C1440E]/10' : ''}`}
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     onVocabClick(vocab);
@@ -58,15 +58,15 @@ const SentenceSegment = ({
         <span className="relative inline">
             <span
                 onClick={onClick}
-                className={`inline leading-loose transition-all duration-300 cursor-pointer rounded-sm px-1 box-decoration-clone ${isActive
-                        ? 'bg-[#FFD54F]/40 text-slate-900 decoration-clone'
-                        : 'text-slate-800 hover:text-slate-900 hover:bg-slate-100'
+                className={`inline leading-loose transition-all duration-300 cursor-pointer rounded-sm px-1 py-0.5 box-decoration-clone ${isActive
+                        ? 'bg-[#C1440E]/15 text-[#1A202C] decoration-clone'
+                        : 'text-[#2C2C2C] hover:text-[#1A202C] hover:bg-[#C1440E]/5'
                     }`}
             >
                 {renderContent()}
             </span>
 
-            {/* Action Bubble (Rendered as a sibling to the text span, but absolutely positioned) */}
+            {/* Action Bubble */}
             {isActive && (
                 <ActionBubble
                     translation={data.translation}
