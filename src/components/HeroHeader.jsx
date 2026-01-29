@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroHeader = ({ title }) => {
     return (
-        <div className="absolute top-0 left-0 right-0 h-[30vh] z-0 overflow-hidden opacity-90 pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 h-[30dvh] z-0 overflow-hidden opacity-90 pointer-events-none">
             {/* Background Image - Fades out at the bottom to blend with page */}
             <img
                 src={`${import.meta.env.BASE_URL}mars-cover.png`}

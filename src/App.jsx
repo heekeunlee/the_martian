@@ -138,14 +138,15 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#FBFBFD] text-[#1C1C1E] font-sans selection:bg-[#007AFF]/20 pb-40"
+      className="min-h-[100dvh] bg-[#FBFBFD] text-[#1C1C1E] font-sans selection:bg-[#007AFF]/20 pb-40"
       onClick={handleBackgroundClick}
     >
       {/* Apple-style Seamless Header */}
       <HeroHeader title={bookData.title} />
 
       {/* Main Content Area - Immersive Layout (No Card) */}
-      <main className="relative z-10 max-w-[580px] mx-auto px-6 sm:px-8 pt-[20vh] transition-opacity duration-500 ease-out">
+      {/* Added safe-area padding to bottom to avoid content hiding behind home bar */}
+      <main className="relative z-10 max-w-[580px] mx-auto px-6 sm:px-8 pt-[20dvh] pb-[env(safe-area-inset-bottom)] transition-opacity duration-500 ease-out">
 
         {/* Title & Author - Fade in */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
@@ -206,8 +207,14 @@ function App() {
       </main>
 
       {/* Floating Glass Footer Control */}
-      <footer className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${showSubtitle ? 'translate-y-[-10px]' : 'translate-y-0'}`}>
-        <div className="flex flex-col items-center gap-3">
+      {/* Added safe-area padding bottom to lift it up from home indicator */}
+      <footer
+        className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 pb-[calc(2.5rem+env(safe-area-inset-bottom))] ${showSubtitle ? 'translate-y-[-10px]' : 'translate-y-0'}`}
+        style={{ pointerEvents: 'none' }} // Allow clicks to pass through the empty container area
+      >
+        <div
+          className="flex flex-col items-center gap-3 pointer-events-auto" // Re-enable pointers for buttons
+        >
 
           {/* Page Indicator - Detached and clean */}
           <span className="text-[10px] font-bold text-[#8E8E93]/80 uppercase tracking-[0.15em] mb-1">
@@ -276,8 +283,9 @@ function App() {
       </footer>
 
       {/* Cinema Subtitle Mode - Apple Style */}
+      {/* Added safe-area padding bottom */}
       {showSubtitle && currentSentence && (
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#1C1C1E]/95 backdrop-blur-xl border-t border-white/5 pt-12 pb-32 px-6 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_-20px_40px_rgba(0,0,0,0.3)]">
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#1C1C1E]/95 backdrop-blur-xl border-t border-white/5 pt-12 pb-[calc(8rem+env(safe-area-inset-bottom))] px-6 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_-20px_40px_rgba(0,0,0,0.3)]">
           <div className="max-w-[500px] mx-auto text-center">
             <p className="text-[#98989D] text-[10px] uppercase tracking-[0.2em] font-bold mb-4">Korean Translation</p>
             <p className="text-[#F2F2F7] font-merriweather text-[1.3rem] leading-relaxed font-normal antialiased">
