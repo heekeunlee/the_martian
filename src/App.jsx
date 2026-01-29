@@ -68,7 +68,7 @@ function App() {
 
         {/* Content Card */}
         <div
-          className="relative z-10 mt-[28vh] min-h-[60vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-sm transition-all bg-[#F9FAFB]"
+          className="relative z-10 mt-[20vh] min-h-[75vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-sm transition-all bg-[#F9FAFB]"
           style={{ marginBottom: showSubtitle ? '140px' : '0' }}
         >
           <main className="px-8 pt-10">
