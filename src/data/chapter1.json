@@ -11,11 +11,11 @@
                     "vocabulary": [
                         {
                             "word": "Sol",
-                            "definition": "화성에서의 하루를 뜻하는 시간 단위 (약 24시간 39분)"
+                            "definition": "화성에서의 하루 (지구의 24시간 39분)"
                         },
                         {
                             "word": "Log Entry",
-                            "definition": "항해 일지나 기록물에 남기는 공식적인 기록 항목"
+                            "definition": "항해 일지나 기록물에 남기는 공식 기록"
                         }
                     ]
                 },
@@ -25,12 +25,12 @@
                     "translation": "난 좆됐다.",
                     "vocabulary": [
                         {
-                            "word": "fucked",
-                            "definition": "완전히 망했거나 희망이 없는 상태 (매우 강한 비속어)"
+                            "word": "pretty much",
+                            "definition": "사실상, 거의 (상황을 요약할 때 사용)"
                         },
                         {
-                            "word": "pretty much",
-                            "definition": "'사실상', '거의'와 같은 의미로 상황을 요약할 때 사용"
+                            "word": "fucked",
+                            "definition": "완전히 망한, 희망이 없는 상태 (비속어)"
                         }
                     ]
                 },
@@ -40,12 +40,8 @@
                     "translation": "그게 내가 심사숙고 끝에 내린 결론이다.",
                     "vocabulary": [
                         {
-                            "word": "considered",
-                            "definition": "깊이 생각하고 충동적이지 않은, 신중한"
-                        },
-                        {
-                            "word": "opinion",
-                            "definition": "전문적 지식이나 경험에 바탕을 둔 견해"
+                            "word": "considered opinion",
+                            "definition": "깊은 생각 끝에 내린 신중한 견해"
                         }
                     ]
                 },
@@ -61,8 +57,12 @@
                     "translation": "내 인생 최고의 두 달이 되었어야 할 시간에서 6일이 지났고, 그것은 악몽으로 변해버렸다.",
                     "vocabulary": [
                         {
-                            "word": "nightmare",
-                            "definition": "악몽, 또는 악몽처럼 끔찍하고 절망적인 상황"
+                            "word": "Six days into",
+                            "definition": "~가 시작된 지 6일째에"
+                        },
+                        {
+                            "word": "turned into a nightmare",
+                            "definition": "악몽(끔찍한 상황)으로 변해버리다"
                         }
                     ]
                 }
@@ -75,7 +75,12 @@
                     "id": "2-1",
                     "text": "I don’t even know who’ll read this.",
                     "translation": "누가 이걸 읽게 될지도 모르겠다.",
-                    "vocabulary": []
+                    "vocabulary": [
+                        {
+                            "word": "don’t even know",
+                            "definition": "~조차 알지 못하다 (불확실성 강조)"
+                        }
+                    ]
                 },
                 {
                     "id": "2-2",
@@ -83,8 +88,12 @@
                     "translation": "어쩌면 누군가 결국엔 이걸 발견하겠지.",
                     "vocabulary": [
                         {
-                            "word": "eventually",
-                            "definition": "시간이 흐른 뒤에 마침내, 결국에는"
+                            "word": "I guess",
+                            "definition": "~인가 보다, ~일 것이다 (추측)"
+                        },
+                        {
+                            "word": "find it eventually",
+                            "definition": "언젠가는 결국 발견하게 되다"
                         }
                     ]
                 }
@@ -105,12 +114,16 @@
                     "translation": "인류가 처음으로 다른 행성에 사람을 보내기 위해 화성으로 손을 뻗고 인류의 지평을 넓힌다는 둥 어쩌고 저쩌고.",
                     "vocabulary": [
                         {
-                            "word": "horizons",
-                            "definition": "지식이나 경험의 범위, 시야, 지평선"
+                            "word": "reaching out to",
+                            "definition": "~를 향해 손을 뻗다, 나아가다"
                         },
                         {
-                            "word": "humanity",
-                            "definition": "인간성, 또는 인류 전체를 아우르는 말"
+                            "word": "expand the horizons",
+                            "definition": "지평(인식이나 활동의 범위)을 넓히다"
+                        },
+                        {
+                            "word": "blah, blah, blah",
+                            "definition": "어쩌고 저쩌고 (지루하거나 뻔한 말 생략)"
                         }
                     ]
                 }
