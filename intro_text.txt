@@ -1,0 +1,442 @@
+
+--- Page 1 ---
+
+--- Page 2 ---
+
+--- Page 3 ---
+This	is	a	work	of	fiction.	Names,	characters,	places,	and	incidents	either	are	the	product	of	the	author’s	imagination	or	are	used	fictitiously.	Any	resemblance	to	actual
+persons,	living	or	dead,	events,	or	locales	is	entirely	coincidental.
+Copyright	©	2011,	2014	by	Andy	Weir
+All	rights	reserved.
+Published	in	the	United	States	by	Crown	Publishers,	an	imprint	of	the	Crown	Publishing	Group,	a	division	of	Random	House	LLC,	a	Penguin	Random	House	Company,	New
+York.
+www.crownpublishing.com
+CROWN	and	the	Crown	colophon	are	registered	trademarks	of	Random	House	LLC.
+Originally	self-published,	in	different	form,	as	an	ebook	in	2011.
+Library	of	Congress	Cataloging-in-Publication	data	is	available	upon	request.
+ISBN	9780804139021
+eBook	ISBN:	9780804139038
+Printed	in	the	United	States	of	America
+Book	design	by	Elizabeth	Rendfleisch
+Map	by	Fred	Haynes
+Photograph	by	Antonio	M.	Rosario/Stockbyte/Getty	Images
+Jacket	design	by	Eric	White
+Jacket	photograph	(astronaut):	NASA
+ep_v4.0
+--- Page 4 ---
+For	Mom,
+who	calls	me	“Pickle,”
+and	Dad,
+who	calls	me	“Dude.”
+--- Page 5 ---
+
+--- Page 6 ---
+
+--- Page 7 ---
+
+--- Page 8 ---
+Contents
+Cover
+Title	Page
+Copyright
+Dedication
+Map
+Chapter	1
+Chapter	2
+Chapter	3
+Chapter	4
+Chapter	5
+Chapter	6
+Chapter	7
+Chapter	8
+Chapter	9
+Chapter	10
+Chapter	11
+Chapter	12
+Chapter	13
+Chapter	14
+Chapter	15
+Chapter	16
+Chapter	17
+Chapter	18
+Chapter	19
+Chapter	20
+Chapter	21
+Chapter	22
+Chapter	23
+Chapter	24
+Chapter	25
+Chapter	26
+--- Page 9 ---
+CHAPTER	1
+--- Page 10 ---
+LOG	ENTRY:	SOL	6
+I’m	pretty	much	fucked.
+That’s	my	considered	opinion.
+Fucked.
+Six	days	into	what	should	be	the	greatest	two	months	of	my	life,	and	it’s	turned	into	a	nightmare.
+I	don’t	even	know	who’ll	read	this.	I	guess	someone	will	find	it	eventually.	Maybe	a	hundred	years
+from	now.
+For	the	record…I	didn’t	die	on	Sol	6.	Certainly	the	rest	of	the	crew	thought	I	did,	and	I	can’t	blame
+them.	Maybe	there’ll	be	a	day	of	national	mourning	for	me,	and	my	Wikipedia	page	will	say,	“Mark
+Watney	is	the	only	human	being	to	have	died	on	Mars.”
+And	it’ll	be	right,	probably.	’Cause	I’ll	surely	die	here.	Just	not	on	Sol	6	when	everyone	thinks	I
+did.
+Let’s	see…where	do	I	begin?
+The	Ares	Program.	Mankind	reaching	out	to	Mars	to	send	people	to	another	planet	for	the	very
+first	time	and	expand	the	horizons	of	humanity	blah,	blah,	blah.	The	Ares	1	crew	did	their	thing	and
+came	back	heroes.	They	got	the	parades	and	fame	and	love	of	the	world.
+Ares	2	did	the	same	thing,	in	a	different	location	on	Mars.	They	got	a	firm	handshake	and	a	hot	cup
+of	coffee	when	they	got	home.
+Ares	3.	Well,	that	was	my	mission.	Okay,	not	
+mine
+	per	se.	Commander	Lewis	was	in	charge.	I	was
+just	one	of	her	crew.	Actually,	I	was	the	very	lowest	ranked	member	of	the	crew.	I	would	only	be	“in
+command”	of	the	mission	if	I	were	the	only	remaining	person.
+What	do	you	know?	I’m	in	command.
+I	wonder	if	this	log	will	be	recovered	before	the	rest	of	the	crew	die	of	old	age.	I	presume	they	got
+back	to	Earth	all	right.	Guys,	if	you’re	reading	this:	It	wasn’t	your	fault.	You	did	what	you	had	to	do.
+In	your	position	I	would	have	done	the	same	thing.	I	don’t	blame	you,	and	I’m	glad	you	survived.
+I	guess	I	should	explain	how	Mars	missions	work,	for	any	layman	who	may	be	reading	this.	We	got	to
+Earth	orbit	the	normal	way,	through	an	ordinary	ship	to	
+Hermes
+.	All	the	Ares	missions	use	
+Hermes
+	to
+get	to	and	from	Mars.	It’s	really	big	and	cost	a	lot	so	NASA	built	only	one.
+Once	we	got	to	
+Hermes
+,	four	additional	unmanned	missions	brought	us	fuel	and	supplies	while	we
+prepared	for	our	trip.	Once	everything	was	a	go,	we	set	out	for	Mars.	But	not	very	fast.	Gone	are	the
+days	of	heavy	chemical	fuel	burns	and	trans-Mars	injection	orbits.
+Hermes
+	is	powered	by	ion	engines.	They	throw	argon	out	the	back	of	the	ship	really	fast	to	get	a
+tiny	amount	of	acceleration.	The	thing	is,	it	doesn’t	take	much	reactant	mass,	so	a	little	argon	(and	a
+nuclear	reactor	to	power	things)	let	us	accelerate	constantly	the	whole	way	there.	You’d	be	amazed	at
+how	fast	you	can	get	going	with	a	tiny	acceleration	over	a	long	time.
+I	could	regale	you	with	tales	of	how	we	had	great	fun	on	the	trip,	but	I	won’t.	I	don’t	feel	like
+reliving	it	right	now.	Suffice	it	to	say	we	got	to	Mars	124	days	later	without	strangling	each	other.
+From	there,	we	took	the	MDV	(Mars	descent	vehicle)	to	the	surface.	The	MDV	is	basically	a	big
+can	with	some	light	thrusters	and	parachutes	attached.	Its	sole	purpose	is	to	get	six	humans	from	Mars
+orbit	to	the	surface	without	killing	any	of	them.
+And	now	we	come	to	the	real	trick	of	Mars	exploration:	having	all	of	our	shit	there	in	advance.
+A	total	of	fourteen	unmanned	missions	deposited	everything	we	would	need	for	surface	operations.
+They	tried	their	best	to	land	all	the	supply	vessels	in	the	same	general	area,	and	did	a	reasonably	good
+--- Page 11 ---
+job.	Supplies	aren’t	nearly	so	fragile	as	humans	and	can	hit	the	ground	really	hard.	But	they	tend	to
+bounce	around	a	lot.
+Naturally,	they	didn’t	send	us	to	Mars	until	they’d	confirmed	that	all	the	supplies	had	made	it	to	the
+surface	and	their	containers	weren’t	breached.	Start	to	finish,	including	supply	missions,	a	Mars
+mission	takes	about	three	years.	In	fact,	there	were	Ares	3	supplies	en	route	to	Mars	while	the	Ares	2
+crew	were	on	their	way	home.
+The	most	important	piece	of	the	advance	supplies,	of	course,	was	the	MAV.	The	Mars	ascent
+vehicle.	That	was	how	we	would	get	back	to	
+Hermes
+	after	surface	operations	were	complete.	The
+MAV	was	soft-landed	(as	opposed	to	the	balloon	bounce-fest	the	other	supplies	had).	Of	course,	it	was
+in	constant	communication	with	Houston,	and	if	there	had	been	any	problems	with	it,	we	would	have
+passed	by	Mars	and	gone	home	without	ever	landing.
+The	MAV	is	pretty	cool.	Turns	out,	through	a	neat	set	of	chemical	reactions	with	the	Martian
+atmosphere,	for	every	kilogram	of	hydrogen	you	bring	to	Mars,	you	can	make	thirteen	kilograms	of
+fuel.	It’s	a	slow	process,	though.	It	takes	twenty-four	months	to	fill	the	tank.	That’s	why	they	sent	it
+long	before	we	got	here.
+You	can	imagine	how	disappointed	I	was	when	I	discovered	the	MAV	was	gone.
+It	was	a	ridiculous	sequence	of	events	that	led	to	me	almost	dying,	and	an	even	more	ridiculous
+sequence	that	led	to	me	surviving.
+The	mission	is	designed	to	handle	sandstorm	gusts	up	to	150	kph.	So	Houston	got	understandably
+nervous	when	we	got	whacked	with	175	kph	winds.	We	all	got	in	our	flight	space	suits	and	huddled	in
+the	middle	of	the	Hab,	just	in	case	it	lost	pressure.	But	the	Hab	wasn’t	the	problem.
+The	MAV	is	a	spaceship.	It	has	a	lot	of	delicate	parts.	It	can	put	up	with	storms	to	a	certain	extent,
+but	it	can’t	just	get	sandblasted	forever.	After	an	hour	and	a	half	of	sustained	wind,	NASA	gave	the
+order	to	abort.	Nobody	wanted	to	stop	a	monthlong	mission	after	only	six	days,	but	if	the	MAV	took
+any	more	punishment,	we’d	all	have	gotten	stranded	down	there.
+We	had	to	go	out	in	the	storm	to	get	from	the	Hab	to	the	MAV.	That	was	going	to	be	risky,	but	what
+choice	did	we	have?
+Everyone	made	it	but	me.
+Our	main	communications	dish,	which	relayed	signals	from	the	Hab	to	
+Hermes
+,	acted	like	a
+parachute,	getting	torn	from	its	foundation	and	carried	with	the	torrent.	Along	the	way,	it	crashed
+through	the	reception	antenna	array.	Then	one	of	those	long	thin	antennae	slammed	into	me	end-first.
+It	tore	through	my	suit	like	a	bullet	through	butter,	and	I	felt	the	worst	pain	of	my	life	as	it	ripped	open
+my	side.	I	vaguely	remember	having	the	wind	knocked	out	of	me	(pulled	out	of	me,	really)	and	my
+ears	popping	painfully	as	the	pressure	of	my	suit	escaped.
+The	last	thing	I	remember	was	seeing	Johanssen	hopelessly	reaching	out	toward	me.
+I	awoke	to	the	oxygen	alarm	in	my	suit.	A	steady,	obnoxious	beeping	that	eventually	roused	me	from
+a	deep	and	profound	desire	to	just	fucking	die.
+The	storm	had	abated;	I	was	facedown,	almost	totally	buried	in	sand.	As	I	groggily	came	to,	I
+wondered	why	I	wasn’t	more	dead.
+The	antenna	had	enough	force	to	punch	through	the	suit	and	my	side,	but	it	had	been	stopped	by	my
+pelvis.	So	there	was	only	one	hole	in	the	suit	(and	a	hole	in	me,	of	course).
+I	had	been	knocked	back	quite	a	ways	and	rolled	down	a	steep	hill.	Somehow	I	landed	facedown,
+which	forced	the	antenna	to	a	strongly	oblique	angle	that	put	a	lot	of	torque	on	the	hole	in	the	suit.	It
+--- Page 12 ---
+made	a	weak	seal.
+Then,	the	copious	blood	from	my	wound	trickled	down	toward	the	hole.	As	the	blood	reached	the
+site	of	the	breach,	the	water	in	it	quickly	evaporated	from	the	airflow	and	low	pressure,	leaving	a
+gunky	residue	behind.	More	blood	came	in	behind	it	and	was	also	reduced	to	gunk.	Eventually,	it
+sealed	the	gaps	around	the	hole	and	reduced	the	leak	to	something	the	suit	could	counteract.
+The	suit	did	its	job	admirably.	Sensing	the	drop	in	pressure,	it	constantly	flooded	itself	with	air
+from	my	nitrogen	tank	to	equalize.	Once	the	leak	became	manageable,	it	only	had	to	trickle	new	air	in
+slowly	to	relieve	the	air	lost.
+After	a	while,	the	CO
+2
+	(carbon	dioxide)	absorbers	in	the	suit	were	expended.	That’s	really	the
+limiting	factor	to	life	support.	Not	the	amount	of	oxygen	you	bring	with	you,	but	the	amount	of	CO
+2
+you	can	remove.	In	the	Hab,	I	have	the	oxygenator,	a	large	piece	of	equipment	that	breaks	apart	CO
+2
+to	give	the	oxygen	back.	But	the	space	suits	have	to	be	portable,	so	they	use	a	simple	chemical
+absorption	process	with	expendable	filters.	I’d	been	asleep	long	enough	that	my	filters	were	useless.
+The	suit	saw	this	problem	and	moved	into	an	emergency	mode	the	engineers	call	“bloodletting.”
+Having	no	way	to	separate	out	the	CO
+2
+,	the	suit	deliberately	vented	air	to	the	Martian	atmosphere,	then
+backfilled	with	nitrogen.	Between	the	breach	and	the	bloodletting,	it	quickly	ran	out	of	nitrogen.	All	it
+had	left	was	my	oxygen	tank.
+So	it	did	the	only	thing	it	could	to	keep	me	alive.	It	started	backfilling	with	pure	oxygen.	I	now
+risked	dying	from	oxygen	toxicity,	as	the	excessively	high	amount	of	oxygen	threatened	to	burn	up
+my	nervous	system,	lungs,	and	eyes.	An	ironic	death	for	someone	with	a	leaky	space	suit:	too	much
+oxygen.
+Every	step	of	the	way	would	have	had	beeping	alarms,	alerts,	and	warnings.	But	it	was	the	high-
+oxygen	warning	that	woke	me.
+The	sheer	volume	of	training	for	a	space	mission	is	astounding.	I’d	spent	a	week	back	on	Earth
+practicing	emergency	space	suit	drills.	I	knew	what	to	do.
+Carefully	reaching	to	the	side	of	my	helmet,	I	got	the	breach	kit.	It’s	nothing	more	than	a	funnel
+with	a	valve	at	the	small	end	and	an	unbelievably	sticky	resin	on	the	wide	end.	The	idea	is	you	have
+the	valve	open	and	stick	the	wide	end	over	a	hole.	The	air	can	escape	through	the	valve,	so	it	doesn’t
+interfere	with	the	resin	making	a	good	seal.	Then	you	close	the	valve,	and	you’ve	sealed	the	breach.
+The	tricky	part	was	getting	the	antenna	out	of	the	way.	I	pulled	it	out	as	fast	as	I	could,	wincing	as
+the	sudden	pressure	drop	dizzied	me	and	made	the	wound	in	my	side	scream	in	agony.
+I	got	the	breach	kit	over	the	hole	and	sealed	it.	It	held.	The	suit	backfilled	the	missing	air	with	yet
+more	oxygen.	Checking	my	arm	readouts,	I	saw	the	suit	was	now	at	85	percent	oxygen.	For	reference,
+Earth’s	atmosphere	is	about	21	percent.	I’d	be	okay,	so	long	as	I	didn’t	spend	too	much	time	like	that.
+I	stumbled	up	the	hill	back	toward	the	Hab.	As	I	crested	the	rise,	I	saw	something	that	made	me	very
+happy	and	something	that	made	me	very	sad:	The	Hab	was	intact	(yay!)	and	the	MAV	was	gone	(boo!).
+Right	that	moment	I	knew	I	was	screwed.	But	I	didn’t	want	to	just	die	out	on	the	surface.	I	limped
+back	to	the	Hab	and	fumbled	my	way	into	an	airlock.	As	soon	as	it	equalized,	I	threw	off	my	helmet.
+Once	inside	the	Hab,	I	doffed	the	suit	and	got	my	first	good	look	at	the	injury.	It	would	need
+stitches.	Fortunately,	all	of	us	had	been	trained	in	basic	medical	procedures,	and	the	Hab	had	excellent
+medical	supplies.	A	quick	shot	of	local	anesthetic,	irrigate	the	wound,	nine	stitches,	and	I	was	done.	I’d
+be	taking	antibiotics	for	a	couple	of	weeks,	but	other	than	that	I’d	be	fine.
+I	knew	it	was	hopeless,	but	I	tried	firing	up	the	communications	array.	No	signal,	of	course.	The
+primary	satellite	dish	had	broken	off,	remember?	And	it	took	the	reception	antennae	with	it.	The	Hab
+--- Page 13 ---
+had	secondary	and	tertiary	communications	systems,	but	they	were	both	just	for	talking	to	the	MAV,
+which	would	use	its	much	more	powerful	systems	to	relay	to	
+Hermes
+.	Thing	is,	that	only	works	if	the
+MAV	is	still	around.
+I	had	no	way	to	talk	to	
+Hermes
+.	In	time,	I	could	locate	the	dish	out	on	the	surface,	but	it	would	take
+weeks	for	me	to	rig	up	any	repairs,	and	that	would	be	too	late.	In	an	abort,	
+Hermes
+	would	leave	orbit
+within	twenty-four	hours.	The	orbital	dynamics	made	the	trip	safer	and	shorter	the	earlier	you	left,	so
+why	wait?
+Checking	out	my	suit,	I	saw	the	antenna	had	plowed	through	my	bio-monitor	computer.	When	on
+an	EVA,	all	the	crew’s	suits	are	networked	so	we	can	see	each	other’s	status.	The	rest	of	the	crew
+would	have	seen	the	pressure	in	my	suit	drop	to	nearly	zero,	followed	immediately	by	my	bio-signs
+going	flat.	Add	to	that	watching	me	tumble	down	a	hill	with	a	spear	through	me	in	the	middle	of	a
+sandstorm…yeah.	They	thought	I	was	dead.	How	could	they	not?
+They	may	have	even	had	a	brief	discussion	about	recovering	my	body,	but	regulations	are	clear.	In
+the	event	a	crewman	dies	on	Mars,	he	stays	on	Mars.	Leaving	his	body	behind	reduces	weight	for	the
+MAV	on	the	trip	back.	That	means	more	disposable	fuel	and	a	larger	margin	of	error	for	the	return
+thrust.	No	point	in	giving	that	up	for	sentimentality.
+So	that’s	the	situation.	I’m	stranded	on	Mars.	I	have	no	way	to	communicate	with	
+Hermes
+	or	Earth.
+Everyone	thinks	I’m	dead.	I’m	in	a	Hab	designed	to	last	thirty-one	days.
+If	the	oxygenator	breaks	down,	I’ll	suffocate.	If	the	water	reclaimer	breaks	down,	I’ll	die	of	thirst.
+If	the	Hab	breaches,	I’ll	just	kind	of	explode.	If	none	of	those	things	happen,	I’ll	eventually	run	out	of
+food	and	starve	to	death.
+So	yeah.	I’m	fucked.
+--- Page 14 ---
+CHAPTER	2
+--- Page 15 ---
+LOG	ENTRY:	SOL	7
+Okay,	I’ve	had	a	good	night’s	sleep,	and	things	don’t	seem	as	hopeless	as	they	did	yesterday.
+Today	I	took	stock	of	supplies	and	did	a	quick	EVA	to	check	up	on	the	external	equipment.	Here’s
+my	situation:
+The	surface	mission	was	supposed	to	be	thirty-one	days.	For	redundancy,	the	supply	probes	had
+enough	food	to	last	the	whole	crew	fifty-six	days.	That	way	if	one	or	two	probes	had	problems,	we’d
+still	have	enough	food	to	complete	the	mission.
+We	were	six	days	in	when	all	hell	broke	loose,	so	that	leaves	enough	food	to	feed	six	people	for
+fifty	days.	I’m	just	one	guy,	so	it’ll	last	me	three	hundred	days.	And	that’s	if	I	don’t	ration	it.	So	I’ve
+got	a	fair	bit	of	time.
+I’m	pretty	flush	on	EVA	suits,	too.	Each	crew	member	had	two	space	suits:	a	flight	spacesuit	to	wear
+during	descent	and	ascent,	and	the	much	bulkier	and	more	robust	EVA	suit	to	wear	when	doing
+surface	operations.	My	flight	spacesuit	has	a	hole	in	it,	and	of	course	the	crew	was	wearing	the	other
+five	when	they	returned	to	
+Hermes
+.	But	all	six	EVA	suits	are	still	here	and	in	perfect	condition.
+The	Hab	stood	up	to	the	storm	without	any	problems.	Outside,	things	aren’t	so	rosy.	I	can’t	find	the
+satellite	dish.	It	probably	got	blown	kilometers	away.
+The	MAV	is	gone,	of	course.	My	crewmates	took	it	up	to	
+Hermes
+.	Though	the	bottom	half	(the
+landing	stage)	is	still	here.	No	reason	to	take	that	back	up	when	weight	is	the	enemy.	It	includes	the
+landing	gear,	the	fuel	plant,	and	anything	else	NASA	figured	it	wouldn’t	need	for	the	trip	back	up	to
+orbit.
+The	MDV	is	on	its	side	and	there’s	a	breach	in	the	hull.	Looks	like	the	storm	ripped	the	cowling	off
+the	reserve	chute	(which	we	didn’t	have	to	use	on	landing).	Once	the	chute	was	exposed,	it	dragged	the
+MDV	all	over	the	place,	smashing	it	against	every	rock	in	the	area.	Not	that	the	MDV	would	be	much
+use	to	me.	Its	thrusters	can’t	even	lift	its	own	weight.	But	it	might	have	been	valuable	for	parts.	Might
+still	be.
+Both	rovers	are	half-buried	in	sand,	but	they’re	in	good	shape	otherwise.	Their	pressure	seals	are
+intact.	Makes	sense.	Operating	procedure	when	a	storm	hits	is	to	stop	motion	and	wait	for	the	storm	to
+pass.	They’re	made	to	stand	up	to	punishment.	I’ll	be	able	to	dig	them	out	with	a	day	or	so	of	work.
+I’ve	lost	communication	with	the	weather	stations,	placed	a	kilometer	away	from	the	Hab	in	four
+directions.	They	might	be	in	perfect	working	order	for	all	I	know.	The	Hab’s	communications	are	so
+weak	right	now	it	probably	can’t	even	reach	a	kilometer.
+The	solar	cell	array	was	covered	in	sand,	rendering	it	useless	(hint:	solar	cells	need	sunlight	to
+make	electricity).	But	once	I	swept	the	cells	off,	they	returned	to	full	efficiency.	Whatever	I	end	up
+doing,	I’ll	have	plenty	of	power	for	it.	Two	hundred	square	meters	of	solar	cells,	with	hydrogen	fuel
+cells	to	store	plenty	of	reserve.	All	I	need	to	do	is	sweep	them	off	every	few	days.
+Things	indoors	are	great,	thanks	to	the	Hab’s	sturdy	design.
+I	ran	a	full	diagnostic	on	the	oxygenator.	Twice.	It’s	perfect.	If	anything	goes	wrong	with	it,	there’s
+a	short-term	spare	I	can	use.	But	it’s	solely	for	emergency	use	while	repairing	the	main	one.	The
+spare	doesn’t	actually	pull	CO
+2
+	apart	and	recapture	the	oxygen.	It	just	absorbs	the	CO
+2
+	the	same	way
+the	space	suits	do.	It’s	intended	to	last	five	days	before	it	saturates	the	filters,	which	means	thirty	days
+for	me	(just	one	person	breathing,	instead	of	six).	So	there’s	some	insurance	there.
+The	water	reclaimer	is	working	fine,	too.	The	bad	news	is	there’s	no	backup.	If	it	stops	working,
+I’ll	be	drinking	reserve	water	while	I	rig	up	a	primitive	distillery	to	boil	piss.	Also,	I’ll	lose	half	a
+liter	of	water	per	day	to	breathing	until	the	humidity	in	the	Hab	reaches	its	maximum	and	water	starts
+--- Page 16 ---
+condensing	on	every	surface.	Then	I’ll	be	licking	the	walls.	Yay.	Anyway,	for	now,	no	problems	with
+the	water	reclaimer.
+So	yeah.	Food,	water,	shelter	all	taken	care	of.	I’m	going	to	start	rationing	food	right	now.	Meals
+are	pretty	minimal	already,	but	I	think	I	can	eat	a	three-fourths	portion	per	meal	and	still	be	all	right.
+That	should	turn	my	three	hundred	days	of	food	into	four	hundred.	Foraging	around	the	medical	area,
+I	found	the	main	bottle	of	vitamins.	There’s	enough	multivitamins	there	to	last	years.	So	I	won’t	have
+any	nutritional	problems	(though	I’ll	still	starve	to	death	when	I’m	out	of	food,	no	matter	how	many
+vitamins	I	take).
+The	medical	area	has	morphine	for	emergencies.	And	there’s	enough	there	for	a	lethal	dose.	I’m
+not	going	to	slowly	starve	to	death,	I’ll	tell	you	that.	If	I	get	to	that	point,	I’ll	take	an	easier	way	out.
+Everyone	on	the	mission	had	two	specialties.	I’m	a	botanist	and	mechanical	engineer;	basically,	the
+mission’s	fix-it	man	who	played	with	plants.	The	mechanical	engineering	might	save	my	life	if
+something	breaks.
+I’ve	been	thinking	about	how	to	survive	this.	It’s	not	completely	hopeless.	There’ll	be	humans	back
+on	Mars	in	about	four	years	when	Ares	4	arrives	(assuming	they	didn’t	cancel	the	program	in	the
+wake	of	my	“death”).
+Ares	4	will	be	landing	at	the	Schiaparelli	crater,	which	is	about	3200	kilometers	away	from	my
+location	here	in	Acidalia	Planitia.	No	way	for	me	to	get	there	on	my	own.	But	if	I	could	communicate,
+I	might	be	able	to	get	a	rescue.	Not	sure	how	they’d	manage	that	with	the	resources	on	hand,	but
+NASA	has	a	lot	of	smart	people.
+So	that’s	my	mission	now.	Find	a	way	to	communicate	with	Earth.	If	I	can’t	manage	that,	find	a	way
+to	communicate	with	
+Hermes
+	when	it	returns	in	four	years	with	the	Ares	4	crew.
+Of	course,	I	don’t	have	any	plan	for	surviving	four	years	on	one	year	of	food.	But	one	thing	at	a
+time	here.	For	now,	I’m	well	fed	and	have	a	purpose:	Fix	the	damn	radio.
+--- Page 17 ---
+LOG	ENTRY:	SOL	10
+Well,	I’ve	done	three	EVAs	and	haven’t	found	any	hint	of	the	communications	dish.
+I	dug	out	one	of	the	rovers	and	had	a	good	drive	around,	but	after	days	of	wandering,	I	think	it’s
+time	to	give	up.	The	storm	probably	blew	the	dish	far	away	and	then	erased	any	drag-marks	or	scuffs
+that	might	have	led	to	a	trail.	Probably	buried	it,	too.
+I	spent	most	of	today	out	at	what’s	left	of	the	communications	array.	It’s	really	a	sorry	sight.	I	may
+as	well	yell	toward	Earth	for	all	the	good	that	damned	thing	will	do	me.
+I	could	throw	together	a	rudimentary	dish	out	of	metal	I	find	around	the	base,	but	this	isn’t	some
+walkie-talkie	I’m	working	with	here.	Communicating	from	Mars	to	Earth	is	a	pretty	big	deal,	and
+requires	extremely	specialized	equipment.	I	won’t	be	able	to	whip	something	up	with	tinfoil	and	gum.
+I	need	to	ration	my	EVAs	as	well	as	food.	The	CO
+2
+	filters	are	not	cleanable.	Once	they’re	saturated,
+they’re	done.	The	mission	accounted	for	a	four-hour	EVA	per	crew	member	per	day.	Fortunately,	CO
+2
+filters	are	light	and	small,	so	NASA	had	the	luxury	of	sending	more	than	we	needed.	All	told,	I	have
+about	1500	hours’	worth	of	CO
+2
+	filters.	After	that,	any	EVAs	I	do	will	have	to	be	managed	with
+bloodletting	the	air.
+Fifteen	hundred	hours	may	sound	like	a	lot,	but	I’m	faced	with	spending	at	least	four	years	here	if
+I’m	going	to	have	any	hope	of	rescue,	with	a	minimum	of	several	hours	per	week	dedicated	to
+sweeping	off	the	solar	array.	Anyway.	No	needless	EVAs.
+In	other	news,	I’m	starting	to	come	up	with	an	idea	for	food.	My	botany	background	may	come	in
+useful	after	all.
+Why	bring	a	botanist	to	Mars?	After	all,	it’s	famous	for	not	having	anything	growing	there.	Well,
+the	idea	was	to	figure	out	how	well	things	grow	in	Martian	gravity,	and	see	what,	if	anything,	we	can
+do	with	Martian	soil.	The	short	answer	is:	quite	a	lot…almost.	Martian	soil	has	the	basic	building
+blocks	needed	for	plant	growth,	but	there’s	a	lot	of	stuff	going	on	in	Earth	soil	that	Mars	soil	doesn’t
+have,	even	when	it’s	placed	in	an	Earth	atmosphere	and	given	plenty	of	water.	Bacterial	activity,
+certain	nutrients	provided	by	animal	life,	etc.	None	of	that	is	happening	on	Mars.	One	of	my	tasks	for
+the	mission	was	to	see	how	plants	grow	here,	in	various	combinations	of	Earth	and	Mars	soil	and
+atmosphere.
+That’s	why	I	have	a	small	amount	of	Earth	soil	and	a	bunch	of	plant	seeds	with	me.
+I	can’t	get	too	excited,	however.	It’s	about	the	amount	of	soil	you’d	put	in	a	window	box,	and	the
+only	seeds	I	have	are	a	few	species	of	grass	and	ferns.	They’re	the	most	rugged	and	easily	grown
+plants	on	Earth,	so	NASA	picked	them	as	the	test	subjects.
+So	I	have	two	problems:	not	enough	dirt,	and	nothing	edible	to	plant	in	it.
+But	I’m	a	botanist,	damn	it.	I	should	be	able	to	find	a	way	to	make	this	happen.	If	I	don’t,	I’ll	be	a
+really	hungry	botanist	in	about	a	year.
+--- Page 18 ---
+LOG	ENTRY:	SOL	11
+I	wonder	how	the	Cubs	are	doing.
+--- Page 19 ---
+LOG	ENTRY:	SOL	14
+I	got	my	undergrad	degree	at	the	University	of	Chicago.	Half	the	people	who	studied	botany	were
+hippies	who	thought	they	could	return	to	some	natural	world	system.	Somehow	feeding	seven	billion
+people	through	pure	gathering.	They	spent	most	of	their	time	working	out	better	ways	to	grow	pot.	I
+didn’t	like	them.	I’ve	always	been	in	it	for	the	science,	not	for	any	New	World	Order	bullshit.
+When	they	made	compost	heaps	and	tried	to	conserve	every	little	ounce	of	living	matter,	I	laughed
+at	them.	“Look	at	the	silly	hippies!	Look	at	their	pathetic	attempts	to	simulate	a	complex	global
+ecosystem	in	their	backyard.”
+Of	course,	now	I’m	doing	exactly	that.	I’m	saving	every	scrap	of	biomatter	I	can	find.	Every	time	I
+finish	a	meal,	the	leftovers	go	to	the	compost	bucket.	As	for	other	biological	material…
+The	Hab	has	sophisticated	toilets.	Shit	is	usually	vaccum-dried,	then	accumulated	in	sealed	bags	to
+be	discarded	on	the	surface.
+Not	anymore!
+In	fact,	I	even	did	an	EVA	to	recover	the	previous	bags	of	shit	from	before	the	crew	left.	Being
+completely	desiccated,	this	particular	shit	didn’t	have	bacteria	in	it	anymore,	but	it	still	had	complex
+proteins	and	would	serve	as	useful	manure.	Adding	it	to	water	and	active	bacteria	would	quickly	get	it
+inundated,	replacing	any	population	killed	by	the	Toilet	of	Doom.
+I	found	a	big	container	and	put	a	bit	of	water	in	it,	then	added	the	dried	shit.	Since	then,	I’ve	added
+my	own	shit	to	it	as	well.	The	worse	it	smells,	the	better	things	are	going.	That’s	the	bacteria	at	work!
+Once	I	get	some	Martian	soil	in	here,	I	can	mix	in	the	shit	and	spread	it	out.	Then	I	can	sprinkle	the
+Earth	soil	on	top.	You	might	not	think	that	would	be	an	important	step,	but	it	is.	There	are	dozens	of
+species	of	bacteria	living	in	Earth	soil,	and	they’re	critical	to	plant	growth.	They’ll	spread	out	and
+breed	like…well,	like	a	bacterial	infection.
+People	have	been	using	human	waste	as	fertilizer	for	centuries.	It’s	even	got	a	pleasant	name:	“night
+soil.”	Normally,	it’s	not	an	ideal	way	to	grow	crops,	because	it	spreads	disease:	Human	waste	has
+pathogens	in	it	that,	you	guessed	it,	infect	humans.	But	it’s	not	a	problem	for	me.	The	only	pathogens
+in	this	waste	are	the	ones	I	already	have.
+Within	a	week,	the	Martian	soil	will	be	ready	for	plants	to	germinate	in.	But	I	won’t	plant	yet.	I’ll
+bring	in	more	lifeless	soil	from	outside	and	spread	some	of	the	live	soil	over	it.	It’ll	“infect”	the	new
+soil	and	I’ll	have	double	what	I	started	with.	After	another	week,	I’ll	double	it	again.	And	so	on.	Of
+course,	all	the	while,	I’ll	be	adding	all	new	manure	to	the	effort.
+My	asshole	is	doing	as	much	to	keep	me	alive	as	my	brain.
+This	isn’t	a	new	concept	I	just	came	up	with.	People	have	speculated	on	how	to	make	crop	soil	out
+of	Martian	dirt	for	decades.	I’ll	just	be	putting	it	to	the	test	for	the	first	time.
+I	searched	through	the	food	supplies	and	found	all	sorts	of	things	that	I	can	plant.	Peas,	for	instance.
+Plenty	of	beans,	too.	I	also	found	several	potatoes.	If	
+any
+	of	them	can	still	germinate	after	their	ordeal,
+that’ll	be	great.	With	a	nearly	infinite	supply	of	vitamins,	all	I	need	are	calories	of	any	kind	to	survive.
+The	total	floor	space	of	the	Hab	is	about	92	square	meters.	I	plan	to	dedicate	all	of	it	to	this
+endeavor.	I	don’t	mind	walking	on	dirt.	It’ll	be	a	lot	of	work,	but	I’m	going	to	need	to	cover	the	entire
+floor	to	a	depth	of	10	centimeters.	That	means	I’ll	have	to	transport	9.2	cubic	meters	of	Martian	soil
+into	the	Hab.	I	can	get	maybe	one-tenth	of	a	cubic	meter	in	through	the	airlock	at	a	time,	and	it’ll	be
+backbreaking	work	to	collect	it.	But	in	the	end,	if	everything	goes	to	plan,	I’ll	have	92	square	meters
+of	crop-able	soil.
+Hell	yeah	I’m	a	botanist!	Fear	my	botany	powers!
+--- Page 20 ---
+LOG	ENTRY:	SOL	15
+Ugh!	This	is	backbreaking	work!
+I	spent	twelve	hours	today	on	EVAs	to	bring	dirt	into	the	Hab.	I	only	managed	to	cover	a	small
+corner	of	the	base,	maybe	five	square	meters.	At	this	rate	it’ll	take	me	weeks	to	get	all	the	soil	in.	But
+hey,	time	is	one	thing	I’ve	got.
+The	first	few	EVAs	were	pretty	inefficient;	me	filling	small	containers	and	bringing	them	in
+through	the	airlock.	Then	I	got	wise	and	just	put	one	big	container	in	the	airlock	itself	and	filled	that
+with	small	containers	till	it	was	full.	That	sped	things	up	a	lot	because	the	airlock	takes	about	ten
+minutes	to	get	through.
+I	ache	all	over.	And	the	shovels	I	have	are	made	for	taking	samples,	not	heavy	digging.	My	back	is
+killing	me.	I	foraged	in	the	medical	supplies	and	found	some	Vicodin.	I	took	it	about	ten	minutes	ago.
+Should	be	kicking	in	soon.
+Anyway,	it’s	nice	to	see	progress.	Time	to	start	getting	the	bacteria	to	work	on	these	minerals.	After
+lunch.	No	three-fourths	ration	today.	I’ve	earned	a	full	meal.

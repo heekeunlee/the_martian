@@ -1,0 +1,282 @@
+{
+    "title": "The Martian - Chapter 1",
+    "content": [
+        {
+            "id": 1,
+            "text": "Log Entry: Sol 6",
+            "translation": "로그 기록: 솔 6일차",
+            "vocabulary": [
+                {
+                    "word": "Sol",
+                    "definition": "솔 (화성에서의 하루)"
+                },
+                {
+                    "word": "Log Entry",
+                    "definition": "일지 기록"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "I’m pretty much fucked.",
+            "translation": "난 좆됐다.",
+            "vocabulary": [
+                {
+                    "word": "fucked",
+                    "definition": "완전히 망한 (비속어)"
+                },
+                {
+                    "word": "pretty much",
+                    "definition": "거의, 사실상"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "That’s my considered opinion.",
+            "translation": "그게 내가 심사숙고 끝에 내린 결론이다.",
+            "vocabulary": [
+                {
+                    "word": "considered",
+                    "definition": "깊이 생각한, 존경받는"
+                },
+                {
+                    "word": "opinion",
+                    "definition": "의견, 견해"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Fucked.",
+            "translation": "좆됐어.",
+            "vocabulary": []
+        },
+        {
+            "id": 5,
+            "text": "Six days into what should be the greatest two months of my life, and it’s turned into a nightmare.",
+            "translation": "내 인생 최고의 두 달이 되었어야 할 시간에서 6일이 지났고, 그것은 악몽으로 변해버렸다.",
+            "vocabulary": [
+                {
+                    "word": "nightmare",
+                    "definition": "악몽"
+                },
+                {
+                    "word": "turned into",
+                    "definition": "~로 변하다"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "I don’t even know who’ll read this.",
+            "translation": "누가 이걸 읽게 될지도 모르겠다.",
+            "vocabulary": []
+        },
+        {
+            "id": 7,
+            "text": "I guess someone will find it eventually.",
+            "translation": "어쩌면 누군가 결국엔 이걸 발견하겠지.",
+            "vocabulary": [
+                {
+                    "word": "eventually",
+                    "definition": "결국, 드디어"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "text": "Maybe a hundred years from now.",
+            "translation": "아마도 지금부터 백 년 후쯤에.",
+            "vocabulary": []
+        },
+        {
+            "id": 9,
+            "text": "For the record…I didn’t die on Sol 6.",
+            "translation": "공식적인 기록을 위해 남기자면... 난 솔 6일차에 죽지 않았다.",
+            "vocabulary": [
+                {
+                    "word": "For the record",
+                    "definition": "공식적으로, 분명히 말해서"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "text": "Certainly the rest of the crew thought I did, and I can’t blame them.",
+            "translation": "분명 나머지 대원들은 내가 죽었다고 생각했을 거고, 그들을 탓할 순 없다.",
+            "vocabulary": [
+                {
+                    "word": "certainly",
+                    "definition": "틀림없이, 분명히"
+                },
+                {
+                    "word": "blame",
+                    "definition": "비난하다, 탓하다"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "text": "Maybe there’ll be a day of national mourning for me, and my Wikipedia page will say, “Mark Watney is the only human being to have died on Mars.”",
+            "translation": "아마 나를 위한 국가 애도의 날이 있을 것이고, 내 위키피디아 페이지에는 '마크 와트니는 화성에서 죽은 유일한 인간이다'라고 적힐 것이다.",
+            "vocabulary": [
+                {
+                    "word": "mourning",
+                    "definition": "애도, 슬픔"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "text": "And it’ll be right, probably.",
+            "translation": "그리고 그건 아마 맞는 말이 될 거다.",
+            "vocabulary": []
+        },
+        {
+            "id": 13,
+            "text": "’Cause I’ll surely die here.",
+            "translation": "왜냐하면 난 여기서 죽을 게 확실하니까.",
+            "vocabulary": [
+                {
+                    "word": "surely",
+                    "definition": "확실히"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "text": "Just not on Sol 6 when everyone thinks I did.",
+            "translation": "단지 모두가 생각하는 솔 6일차가 아닐 뿐이다.",
+            "vocabulary": []
+        },
+        {
+            "id": 15,
+            "text": "Let’s see…where do I begin?",
+            "translation": "어디 보자... 어디서부터 시작해야 하나?",
+            "vocabulary": []
+        },
+        {
+            "id": 16,
+            "text": "The Ares Program.",
+            "translation": "아레스 프로그램.",
+            "vocabulary": []
+        },
+        {
+            "id": 17,
+            "text": "Mankind reaching out to Mars to send people to another planet for the very first time and expand the horizons of humanity blah, blah, blah.",
+            "translation": "인류가 처음으로 다른 행성에 사람을 보내기 위해 화성으로 손을 뻗고 인류의 지평을 넓힌다는 둥 어쩌고 저쩌고.",
+            "vocabulary": [
+                {
+                    "word": "horizons",
+                    "definition": "지평, 시야"
+                },
+                {
+                    "word": "humanity",
+                    "definition": "인류"
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "text": "The Ares 1 crew did their thing and came back heroes.",
+            "translation": "아레스 1호 대원들은 임무를 수행하고 영웅이 되어 돌아왔다.",
+            "vocabulary": []
+        },
+        {
+            "id": 19,
+            "text": "They got the parades and fame and love of the world.",
+            "translation": "그들은 퍼레이드와 명성, 전 세계의 사랑을 받았다.",
+            "vocabulary": [
+                {
+                    "word": "fame",
+                    "definition": "명성"
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "text": "Ares 2 did the same thing, in a different location on Mars.",
+            "translation": "아레스 2호도 화성의 다른 장소에서 똑같은 일을 했다.",
+            "vocabulary": []
+        },
+        {
+            "id": 21,
+            "text": "They got a firm handshake and a hot cup of coffee when they got home.",
+            "translation": "그들이 집에 돌아왔을 때 받은 건 굳건한 악수와 따뜻한 커피 한 잔뿐이었다.",
+            "vocabulary": [
+                {
+                    "word": "firm",
+                    "definition": "굳건한, 단단한"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "text": "Ares 3. Well, that was my mission.",
+            "translation": "아레스 3호. 음, 그게 내 임무였다.",
+            "vocabulary": []
+        },
+        {
+            "id": 23,
+            "text": "Okay, not mine per se.",
+            "translation": "좋아, 엄밀히 말하면 '내' 임무는 아니었다.",
+            "vocabulary": [
+                {
+                    "word": "per se",
+                    "definition": "그 자체로, 본질적으로"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "text": "Commander Lewis was in charge.",
+            "translation": "루이스 대령이 지휘관이었다.",
+            "vocabulary": [
+                {
+                    "word": "in charge",
+                    "definition": "책임을 맡은, 담당의"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "text": "I was just one of her crew.",
+            "translation": "난 그저 그녀의 대원 중 한 명이었을 뿐이다.",
+            "vocabulary": []
+        },
+        {
+            "id": 26,
+            "text": "Actually, I was the very lowest ranked member of the crew.",
+            "translation": "사실, 난 대원들 중 가장 계급이 낮았다.",
+            "vocabulary": [
+                {
+                    "word": "rank",
+                    "definition": "계급, 지위"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "text": "I would only be “in command” of the mission if I were the only remaining person.",
+            "translation": "내가 유일한 생존자가 되어야만 내가 임무를 '지휘'하게 될 터였다.",
+            "vocabulary": [
+                {
+                    "word": "remaining",
+                    "definition": "남아있는"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "text": "What do you know? I’m in command.",
+            "translation": "그런데 무슨 일이 일어났는지 아나? 내가 지휘관이 되었다.",
+            "vocabulary": [
+                {
+                    "word": "What do you know?",
+                    "definition": "거 참 놀랍군, 이게 웬일이야?"
+                }
+            ]
+        }
+    ]
+}
