@@ -36,10 +36,16 @@ const SentenceSegment = ({
                         newParts.push(
                             <span
                                 key={`${vocab.word}-${i}`}
-                                className="relative inline-block" // Wrapper for positioning tooltip
+                                className="relative inline-block"
                             >
                                 <span
-                                    className={`font-bold text-[#C1440E] cursor-pointer border-b border-[#C1440E]/30 hover:bg-[#C1440E]/5 transition-colors mx-0.5 ${isVocabActive ? 'bg-[#C1440E]/10' : ''}`}
+                                    className={`
+                                font-medium cursor-pointer transition-all duration-200 px-1 py-0.5 rounded-md mx-0.5
+                                ${isVocabActive
+                                            ? 'bg-[#FDBA74] text-[#1F2937] shadow-sm' // Active: Solid Orange
+                                            : 'bg-[#FDBA74]/30 text-[#1F2937] hover:bg-[#FDBA74]/50' // Inactive: Transparent Orange
+                                        }
+                            `}
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         onVocabClick(vocab);
@@ -75,10 +81,13 @@ const SentenceSegment = ({
         <span className="relative inline">
             <span
                 onClick={onClick}
-                className={`inline leading-loose transition-all duration-300 cursor-pointer rounded-sm px-1 py-0.5 box-decoration-clone ${isActive
-                        ? 'bg-[#C1440E]/10 text-[#1A202C] decoration-clone'
-                        : 'text-[#2C2C2C] hover:text-[#1A202C] hover:bg-[#C1440E]/5'
-                    }`}
+                className={`
+            inline leading-[2.2] transition-all duration-300 cursor-pointer rounded-lg px-2 py-1 box-decoration-clone
+            ${isActive
+                        ? 'bg-[#8B5CF6]/20 text-[#1F2937] shadow-[0_0_0_2px_rgba(139,92,246,0.1)]' // Active: Violet Tint
+                        : 'text-[#374151] hover:text-[#111827] hover:bg-black/5' // Default: Soft Black
+                    }
+        `}
             >
                 {renderContent()}
             </span>

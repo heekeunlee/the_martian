@@ -4,35 +4,36 @@ import { Volume2, Captions } from 'lucide-react';
 const ActionBubble = ({ onPlay, onToggleSubtitle, isSubtitleActive }) => {
     return (
         <div
-            className="absolute left-1/2 -translate-x-1/2 -top-3 -translate-y-full z-50 w-max animate-in fade-in slide-in-from-bottom-2 duration-300"
-            style={{ filter: 'drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2))' }}
+            className="absolute left-1/2 -translate-x-1/2 -top-4 -translate-y-full z-50 w-max animate-in fade-in slide-in-from-bottom-2 duration-300"
+            style={{ filter: 'drop-shadow(0 4px 12px rgba(139, 92, 246, 0.4))' }} // Violet shadow
             onClick={(e) => e.stopPropagation()}
         >
-            <div className="bg-[#1A202C]/90 backdrop-blur-md text-[#F9F7F1] rounded-full px-2 py-2 flex items-center gap-1 border border-white/10">
-                {/* Triangle Arrow */}
-                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-[#1A202C]/90 backdrop-blur-md rotate-45 border-r border-b border-white/10"></div>
+            {/* Violet Pill Shape */}
+            <div className="bg-[#8B5CF6] text-white rounded-2xl px-3 py-2 flex items-center gap-1">
+                {/* Sharp Triangle Arrow */}
+                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-[#8B5CF6] rotate-45"></div>
 
                 {/* Listen Button */}
                 <button
                     onClick={onPlay}
-                    className="flex items-center gap-2 px-4 py-2 bg-[#C1440E] hover:bg-[#D95216] text-white rounded-full text-xs font-bold uppercase tracking-wider transition-colors shadow-lg shadow-[#C1440E]/20"
+                    className="flex items-center gap-1.5 px-3 py-1.5 hover:bg-white/20 rounded-xl text-sm font-bold transition-colors"
                 >
-                    <Volume2 size={14} />
-                    Listen
+                    <Volume2 size={18} fill="currentColor" />
+                    <span>Listen</span>
                 </button>
 
-                <div className="w-px h-4 bg-white/10 mx-1"></div>
+                <div className="w-px h-4 bg-white/20 mx-1"></div>
 
-                {/* Translation Toggle (CC style) */}
+                {/* Translation Toggle */}
                 <button
                     onClick={onToggleSubtitle}
-                    className={`flex items-center gap-2 px-3 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-colors ${isSubtitleActive
-                            ? 'bg-white text-[#1A202C]'
-                            : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white'
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-sm font-bold transition-colors ${isSubtitleActive
+                            ? 'bg-white text-[#8B5CF6]'
+                            : 'hover:bg-white/20'
                         }`}
                 >
-                    <Captions size={16} />
-                    {isSubtitleActive ? 'Hide' : 'Trans'}
+                    <Captions size={18} />
+                    <span>{isSubtitleActive ? 'Hide' : 'Trans'}</span>
                 </button>
             </div>
         </div>
