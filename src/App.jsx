@@ -206,89 +206,86 @@ function App() {
         </div>
       </main>
 
-      {/* Floating Glass Footer Control */}
-      {/* Added safe-area padding bottom to lift it up from home indicator */}
+      {/* Floating Glass Footer Control - Premium Apple Dock Style */}
       <footer
-        className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 pb-[calc(2.5rem+env(safe-area-inset-bottom))] ${showSubtitle ? 'translate-y-[-10px]' : 'translate-y-0'}`}
-        style={{ pointerEvents: 'none' }} // Allow clicks to pass through the empty container area
+        className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-700 pb-[calc(2rem+env(safe-area-inset-bottom))] ${showSubtitle ? 'translate-y-[-10px]' : 'translate-y-0'}`}
+        style={{ pointerEvents: 'none' }}
       >
         <div
-          className="flex flex-col items-center gap-3 pointer-events-auto" // Re-enable pointers for buttons
+          className="flex flex-col items-center gap-4 pointer-events-auto"
         >
 
-          {/* Page Indicator - Detached and clean */}
-          <span className="text-[10px] font-bold text-[#8E8E93]/80 uppercase tracking-[0.15em] mb-1">
-            Page {currentPage.pageId} of {totalPages}
+          {/* Page Indicator - Minimalist text above dock */}
+          <span className="text-[10px] font-bold text-[#8E8E93]/60 uppercase tracking-[0.2em] mb-0 backdrop-blur-sm">
+            Page {currentPage.pageId} / {totalPages}
           </span>
 
-          {/* Control Capsule */}
-          <div className="bg-white/70 backdrop-blur-2xl border border-white/40 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] rounded-full px-4 py-2 flex items-center gap-3 group hover:scale-[1.02] transition-transform duration-300">
+          {/* The "Island" Control Dock */}
+          <div className="bg-[#1C1C1E]/85 backdrop-blur-3xl border border-white/5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.3)] rounded-full pl-6 pr-2 py-2 flex items-center justify-between gap-6 group scale-[0.95] hover:scale-100 transition-all duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)]">
 
-            {/* Prev */}
-            <button
-              onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToPrevPage(); }}
-              disabled={currentPageIndex === 0}
-              className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentPageIndex === 0
-                  ? 'text-gray-300 cursor-not-allowed'
-                  : 'text-gray-500 hover:bg-black/5 hover:text-black'
-                }`}
-            >
-              <ChevronLeft size={22} strokeWidth={2} />
-            </button>
+            {/* Navigation Group */}
+            <div className="flex items-center gap-1">
+              <button
+                onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToPrevPage(); }}
+                disabled={currentPageIndex === 0}
+                className={`w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 ${currentPageIndex === 0
+                    ? 'text-white/20 cursor-not-allowed'
+                    : 'text-white hover:bg-white/10 active:scale-90'
+                  }`}
+              >
+                <ChevronLeft size={20} strokeWidth={2.5} />
+              </button>
 
-            <div className="w-px h-6 bg-gray-300/50"></div>
+              <button
+                onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToNextPage(); }}
+                disabled={currentPageIndex === totalPages - 1}
+                className={`w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 ${currentPageIndex === totalPages - 1
+                    ? 'text-white/20 cursor-not-allowed'
+                    : 'text-white hover:bg-white/10 active:scale-90'
+                  }`}
+              >
+                <ChevronRight size={20} strokeWidth={2.5} />
+              </button>
+            </div>
 
-            {/* Play/Pause Main Action */}
+            {/* Play/Pause Main Action - Floating separate circle effect visually */}
             <button
               onClick={toggleAutoRead}
-              className={`w-12 h-12 flex items-center justify-center rounded-full shadow-sm transition-all transform active:scale-95 ${isAutoPlaying
-                  ? 'bg-[#FF9500] text-white'
-                  : 'bg-[#1C1C1E] text-white hover:bg-black'
+              className={`w-14 h-14 flex items-center justify-center rounded-full transition-all duration-300 ease-out transform hover:scale-105 active:scale-90 shadow-lg ${isAutoPlaying
+                  ? 'bg-[#FF9500] text-black shadow-[#FF9500]/30' // Active: Warm Orange
+                  : 'bg-white text-black shadow-white/20' // Inactive: Pure White
                 }`}
             >
               {isAutoPlaying ? (
-                <Pause size={20} fill="currentColor" />
+                <Pause size={22} fill="currentColor" className="ml-0.5" />
               ) : (
-                <Play size={20} fill="currentColor" className="ml-1" />
+                <Play size={22} fill="currentColor" className="ml-1" />
               )}
             </button>
 
-            {/* Translation Toggle (New Key) */}
+
+            {/* Translation Toggle (New Key) - Pushed to right with own background */}
             <button
               onClick={toggleTranslationMode}
-              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all active:scale-95 ${showSubtitle
-                  ? 'bg-[#007AFF] text-white shadow-md' // Active Blue
-                  : 'bg-white text-gray-400 hover:text-[#007AFF] border border-gray-100' // Inactive
+              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 active:scale-90 ml-2 ${showSubtitle
+                  ? 'bg-[#0A84FF] text-white' // iOS Blue
+                  : 'bg-white/10 text-white/70 hover:bg-white/20 hover:text-white' // Ghost
                 }`}
               title="Toggle Translation"
             >
-              <Languages size={20} />
+              <Languages size={18} strokeWidth={2.5} />
             </button>
 
-            <div className="w-px h-6 bg-gray-300/50"></div>
-
-            {/* Next */}
-            <button
-              onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToNextPage(); }}
-              disabled={currentPageIndex === totalPages - 1}
-              className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentPageIndex === totalPages - 1
-                  ? 'text-gray-300 cursor-not-allowed'
-                  : 'text-gray-500 hover:bg-black/5 hover:text-black'
-                }`}
-            >
-              <ChevronRight size={22} strokeWidth={2} />
-            </button>
           </div>
         </div>
       </footer>
 
-      {/* Cinema Subtitle Mode - Apple Style */}
-      {/* Added safe-area padding bottom */}
+      {/* Cinema Subtitle Mode - Updated for Floating Look */}
       {showSubtitle && currentSentence && (
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#1C1C1E]/95 backdrop-blur-xl border-t border-white/5 pt-12 pb-[calc(8rem+env(safe-area-inset-bottom))] px-6 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_-20px_40px_rgba(0,0,0,0.3)]">
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/95 backdrop-blur-3xl border-t border-white/10 pt-10 pb-[calc(10rem+env(safe-area-inset-bottom))] px-8 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_-20px_60px_rgba(0,0,0,0.5)]">
           <div className="max-w-[500px] mx-auto text-center">
-            <p className="text-[#98989D] text-[10px] uppercase tracking-[0.2em] font-bold mb-4">Korean Translation</p>
-            <p className="text-[#F2F2F7] font-merriweather text-[1.3rem] leading-relaxed font-normal antialiased">
+            <div className="w-12 h-1 bg-white/20 rounded-full mx-auto mb-6"></div>
+            <p className="text-[#F5F5F7] font-merriweather text-[1.3rem] leading-relaxed font-normal antialiased tracking-wide">
               {currentSentence.translation}
             </p>
           </div>
