@@ -11,11 +11,11 @@
                     "vocabulary": [
                         {
                             "word": "Sol",
-                            "definition": "솔 (화성에서의 하루)"
+                            "definition": "화성에서의 하루를 뜻하는 시간 단위 (약 24시간 39분)"
                         },
                         {
                             "word": "Log Entry",
-                            "definition": "일지 기록"
+                            "definition": "항해 일지나 기록물에 남기는 공식적인 기록 항목"
                         }
                     ]
                 },
@@ -26,11 +26,11 @@
                     "vocabulary": [
                         {
                             "word": "fucked",
-                            "definition": "완전히 망한 (비속어)"
+                            "definition": "완전히 망했거나 희망이 없는 상태 (매우 강한 비속어)"
                         },
                         {
                             "word": "pretty much",
-                            "definition": "거의, 사실상"
+                            "definition": "'사실상', '거의'와 같은 의미로 상황을 요약할 때 사용"
                         }
                     ]
                 },
@@ -41,11 +41,11 @@
                     "vocabulary": [
                         {
                             "word": "considered",
-                            "definition": "깊이 생각한"
+                            "definition": "깊이 생각하고 충동적이지 않은, 신중한"
                         },
                         {
                             "word": "opinion",
-                            "definition": "의견"
+                            "definition": "전문적 지식이나 경험에 바탕을 둔 견해"
                         }
                     ]
                 },
@@ -62,7 +62,7 @@
                     "vocabulary": [
                         {
                             "word": "nightmare",
-                            "definition": "악몽"
+                            "definition": "악몽, 또는 악몽처럼 끔찍하고 절망적인 상황"
                         }
                     ]
                 }
@@ -84,7 +84,7 @@
                     "vocabulary": [
                         {
                             "word": "eventually",
-                            "definition": "결국"
+                            "definition": "시간이 흐른 뒤에 마침내, 결국에는"
                         }
                     ]
                 }
@@ -106,11 +106,11 @@
                     "vocabulary": [
                         {
                             "word": "horizons",
-                            "definition": "지평"
+                            "definition": "지식이나 경험의 범위, 시야, 지평선"
                         },
                         {
                             "word": "humanity",
-                            "definition": "인류"
+                            "definition": "인간성, 또는 인류 전체를 아우르는 말"
                         }
                     ]
                 }
