@@ -68,16 +68,18 @@ function App() {
 
         {/* Content Card */}
         <div
-          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-[0_-20px_50px_rgba(255,255,255,0.8)] transition-all bg-[#F9FAFB]"
+          className="relative z-10 mt-[28vh] min-h-[60vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-sm transition-all bg-[#F9FAFB]"
           style={{ marginBottom: showSubtitle ? '140px' : '0' }}
         >
-          <main className="px-8 pt-12">
-            {/* Intro Tagline Area */}
-            <div className="text-center mb-12">
-              <h2 className="text-xl font-bold text-[#111827] leading-snug mb-3 break-keep font-sans tracking-tight">
-                하루에 단 10분만 투자하여 좋아하는<br />책으로 영어를 정복하세요
+          <main className="px-8 pt-10">
+            {/* Intro Title Area - New Text */}
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-playfair font-black text-[#1F2937] mb-1">
+                The Martian
               </h2>
-              <div className="w-12 h-1.5 bg-[#8B5CF6] rounded-full mx-auto opacity-30"></div>
+              <p className="text-[#8B5CF6] font-medium tracking-widest text-xs uppercase font-sans">
+                Andy Weir
+              </p>
             </div>
 
             {/* Chapter Info */}
@@ -86,12 +88,9 @@ function App() {
                 <BookOpen size={14} className="text-[#8B5CF6]" />
                 <span className="text-xs font-bold text-[#8B5CF6] uppercase tracking-widest font-sans">Chapter 1</span>
               </div>
-              <span className="text-xs font-bold text-slate-400 uppercase tracking-widest font-sans">
-                Page <span className="text-[#1F2937]">{currentPage.pageId}</span>
-              </span>
             </div>
 
-            {/* Continuous Text Block - Apple/Toss Style Typography */}
+            {/* Continuous Text Block */}
             <div className="font-merriweather text-[1.25rem] leading-[2.2] text-justify text-[#374151] tracking-normal mb-10">
               {currentPage.sentences.map((sentence) => (
                 <SentenceSegment
@@ -128,9 +127,9 @@ function App() {
           </main>
         </div>
 
-        {/* Footer Navigation */}
-        <footer className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-[360px] transition-all duration-300 ${showSubtitle ? 'translate-y-[-10px] opacity-0 pointer-events-none' : 'opacity-100'}`}>
-          <div className="bg-white/80 backdrop-blur-xl border border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-full px-6 py-4 flex items-center justify-between group hover:scale-[1.02] transition-all">
+        {/* Footer Navigation - FIXED position to be always visible */}
+        <footer className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[360px] transition-all duration-300 ${showSubtitle ? 'translate-y-[-10px] opacity-0 pointer-events-none' : 'opacity-100'}`}>
+          <div className="bg-white/90 backdrop-blur-xl border border-white/40 shadow-[0_8px_30px_rgba(139,92,246,0.15)] rounded-full px-6 py-4 flex items-center justify-between group hover:scale-[1.02] transition-all">
             <button
               onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
               disabled={currentPageIndex === 0}
@@ -161,7 +160,7 @@ function App() {
 
         {/* Cinema Subtitle Bar (Fixed Bottom) */}
         {showSubtitle && currentSentence && (
-          <div className="absolute bottom-0 left-0 right-0 z-40 bg-[#1F2937]/95 backdrop-blur-md border-t border-white/10 p-8 pb-12 animate-in slide-in-from-bottom-full duration-300 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
+          <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#1F2937]/95 backdrop-blur-md border-t border-white/10 p-8 pb-12 animate-in slide-in-from-bottom-full duration-300 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
             <div className="max-w-md mx-auto text-center">
               <h3 className="text-[#FDBA74] text-[10px] font-bold uppercase tracking-[0.2em] mb-4 font-sans">Korean Translation</h3>
               <p className="text-white font-merriweather text-[1.15rem] leading-relaxed font-medium">
