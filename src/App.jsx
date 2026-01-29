@@ -2,20 +2,23 @@ import React, { useState, useEffect } from 'react';
 import bookData from './data/chapter1.json';
 import SentenceSegment from './components/SentenceSegment';
 import HeroHeader from './components/HeroHeader';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, BookOpen } from 'lucide-react';
 
 function App() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [activeSentenceId, setActiveSentenceId] = useState(null);
   const [activeVocab, setActiveVocab] = useState(null);
+  const [showSubtitle, setShowSubtitle] = useState(false);
 
   const currentPage = bookData.pages[currentPageIndex];
   const totalPages = bookData.pages.length;
+  const currentSentence = currentPage.sentences.find(s => s.id === activeSentenceId);
 
   // Reset active state when changing pages
   useEffect(() => {
     setActiveSentenceId(null);
     setActiveVocab(null);
+    setShowSubtitle(false);
     window.scrollTo(0, 0);
   }, [currentPageIndex]);
 
@@ -33,16 +36,18 @@ function App() {
 
   const handleSentenceClick = (id) => {
     if (activeSentenceId === id) {
-      // Optional: toggle off if clicking same one
+      // Clicking same sentence just toggles nothing for now, maybe ensure subtitle is kept?
     } else {
       setActiveSentenceId(id);
-      setActiveVocab(null);
+      setActiveVocab(null); // Clear vocab when switching sentence
+      setShowSubtitle(false); // Reset subtitle default
     }
   };
 
   const handleBackgroundClick = () => {
     setActiveSentenceId(null);
     setActiveVocab(null);
+    setShowSubtitle(false);
   };
 
   const playAudio = (text) => {
@@ -54,20 +59,18 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#1A202C] flex justify-center items-start selection:bg-[#C1440E]/30 selection:text-[#1A202C]"
+      className="min-h-screen bg-[#1A202C] flex justify-center items-start selection:bg-[#C1440E]/30 selection:text-[#1A202C] overflow-hidden"
       onClick={handleBackgroundClick}
     >
-      {/* Container - constrained to mobile max-width, mimicking a high-end reader app */}
-      <div className="w-full max-w-[430px] min-h-screen relative shadow-[0_0_80px_-20px_rgba(0,0,0,0.5)] overflow-hidden bg-[#1A202C]">
+      <div className="w-full max-w-[430px] min-h-screen relative shadow-[0_0_80px_-20px_rgba(0,0,0,0.5)] bg-[#1A202C]">
 
         <HeroHeader title={bookData.title} />
 
-        {/* Content Card - slides over header */}
+        {/* Content Card */}
         <div
-          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2.5rem] pb-32 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-[0_-15px_40px_rgba(0,0,0,0.3)]"
-          style={{ backgroundColor: '#F9F7F1' }}
+          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-[0_-15px_40px_rgba(0,0,0,0.3)] transition-all"
+          style={{ backgroundColor: '#F9F7F1', marginBottom: showSubtitle ? '120px' : '0' }}
         >
-
           <main className="px-7 pt-10">
             {/* Intro Tagline Area */}
             <div className="text-center mb-10">
@@ -79,8 +82,13 @@ function App() {
 
             {/* Chapter Info */}
             <div className="flex items-center justify-between mb-8 pb-4 border-b border-[#C1440E]/10">
-              <span className="text-[10px] font-bold text-[#C1440E] uppercase tracking-[0.2em] font-inter">Chapter 1</span>
-              <span className="text-[10px] font-bold text-[#A0AEC0] uppercase tracking-[0.2em] font-inter">Page {currentPage.pageId}</span>
+              <div className="flex items-center gap-2">
+                <BookOpen size={12} className="text-[#C1440E]" />
+                <span className="text-[10px] font-bold text-[#C1440E] uppercase tracking-[0.2em] font-inter">Chapter 1</span>
+              </div>
+              <span className="text-[10px] font-bold text-[#A0AEC0] uppercase tracking-[0.2em] font-inter">
+                Page <span className="text-[#2C2C2C]">{currentPage.pageId}</span> <span className="text-[#CBD5E0]">/ {totalPages + 8}</span>
+              </span>
             </div>
 
             {/* Continuous Text Block */}
@@ -90,23 +98,24 @@ function App() {
                   key={sentence.id}
                   data={sentence}
                   isActive={activeSentenceId === sentence.id}
-                  activeVocab={activeVocab}
+                  isSubtitleActive={showSubtitle}
+                  currentVocab={activeVocab}
                   onClick={(e) => {
                     e.stopPropagation();
                     handleSentenceClick(sentence.id);
                   }}
                   onVocabClick={(vocab) => {
                     setActiveVocab(vocab);
-                    setActiveSentenceId(sentence.id);
+                    // Don't change active sentence if just checking vocab
                   }}
+                  onVocabClose={() => setActiveVocab(null)}
                   onPlay={(e) => {
                     e.stopPropagation();
                     playAudio(sentence.text);
                   }}
-                  onClose={(e) => {
+                  onToggleSubtitle={(e) => {
                     e.stopPropagation();
-                    setActiveSentenceId(null);
-                    setActiveVocab(null);
+                    setShowSubtitle(!showSubtitle);
                   }}
                 />
               ))}
@@ -120,8 +129,8 @@ function App() {
           </main>
         </div>
 
-        {/* Floating Navigation Bar - Glassmorphism */}
-        <footer className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 w-[85%] max-w-[340px]">
+        {/* Footer Navigation */}
+        <footer className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-30 w-[85%] max-w-[340px] transition-all duration-300 ${showSubtitle ? 'translate-y-[-10px] opacity-0 pointer-events-none' : 'opacity-100'}`}>
           <div className="bg-[#1A202C]/80 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] rounded-full px-6 py-3.5 flex items-center justify-between group hover:bg-[#1A202C]/90 transition-all">
             <button
               onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
@@ -150,6 +159,18 @@ function App() {
             </button>
           </div>
         </footer>
+
+        {/* Cinema Subtitle Bar (Fixed Bottom) */}
+        {showSubtitle && currentSentence && (
+          <div className="absolute bottom-0 left-0 right-0 z-40 bg-[#1A202C]/95 backdrop-blur-md border-t border-white/10 p-6 pb-10 animate-in slide-in-from-bottom-full duration-300">
+            <div className="max-w-md mx-auto text-center">
+              <h3 className="text-[#C1440E] text-[10px] font-bold uppercase tracking-[0.2em] mb-3 font-inter">Korean Translation</h3>
+              <p className="text-[#F9F7F1] font-merriweather text-lg leading-relaxed font-medium">
+                {currentSentence.translation}
+              </p>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>
