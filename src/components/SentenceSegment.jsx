@@ -32,7 +32,7 @@ const SentenceSegment = ({
                         newParts.push(
                             <span
                                 key={`${vocab.word}-${i}`}
-                                className={`font-semibold text-orange-400 cursor-pointer border-b-2 border-orange-400/30 hover:bg-orange-400/10 transition-colors mx-0.5 ${activeVocab === vocab ? 'bg-orange-400/20' : ''}`}
+                                className={`font-bold text-indigo-700 cursor-pointer border-b-2 border-indigo-200 hover:bg-indigo-50 transition-colors mx-0.5 ${activeVocab === vocab ? 'bg-indigo-100 text-indigo-900' : ''}`}
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     onVocabClick(vocab);
@@ -58,9 +58,9 @@ const SentenceSegment = ({
         <span className="relative inline">
             <span
                 onClick={onClick}
-                className={`inline leading-loose transition-colors duration-200 cursor-pointer rounded px-0.5 box-decoration-clone ${isActive
-                        ? 'bg-orange-500/15 text-white'
-                        : 'text-slate-300 hover:text-slate-100 hover:bg-slate-800'
+                className={`inline leading-loose transition-all duration-300 cursor-pointer rounded-sm px-1 box-decoration-clone ${isActive
+                        ? 'bg-[#FFD54F]/40 text-slate-900 decoration-clone'
+                        : 'text-slate-800 hover:text-slate-900 hover:bg-slate-100'
                     }`}
             >
                 {renderContent()}

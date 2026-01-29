@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import bookData from './data/chapter1.json';
 import SentenceSegment from './components/SentenceSegment';
 import HeroHeader from './components/HeroHeader';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Menu } from 'lucide-react';
 
 function App() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -32,17 +32,15 @@ function App() {
   };
 
   const handleSentenceClick = (id) => {
-    // Toggle active state
     if (activeSentenceId === id) {
-      // Do nothing if clicking same sentence, let user click X to close or click another
+      // Optional: toggle off if clicking same one
     } else {
       setActiveSentenceId(id);
-      setActiveVocab(null); // Reset vocab when switching sentences
+      setActiveVocab(null);
     }
   };
 
   const handleBackgroundClick = () => {
-    // Dismiss popup when clicking background
     setActiveSentenceId(null);
     setActiveVocab(null);
   };
@@ -56,83 +54,92 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-slate-900 text-slate-200 font-sans pb-20 selection:bg-orange-500 selection:text-white"
+      className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-indigo-200 selection:text-indigo-900"
       onClick={handleBackgroundClick}
     >
       <HeroHeader title={bookData.title} />
 
-      {/* Main Content Area (Book Page) */}
-      <main className="max-w-3xl mx-auto px-6 md:px-12">
-        {/* Page Indicator */}
-        <div className="text-center text-slate-500 font-serif italic mb-6 text-sm">
-          Page {currentPage.pageId}
-        </div>
+      {/* Overlapping Content Card */}
+      <div className="relative z-10 mt-[35vh] min-h-[65vh] bg-[#FDFBF7] rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.1)] pb-24">
 
-        {/* Continuous Text Block */}
-        <div className="font-serif text-lg md:text-xl leading-9 md:leading-10 text-justify">
-          {currentPage.sentences.map((sentence) => (
-            <SentenceSegment
-              key={sentence.id}
-              data={sentence}
-              isActive={activeSentenceId === sentence.id}
-              activeVocab={activeVocab}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleSentenceClick(sentence.id);
-              }}
-              onVocabClick={(vocab) => {
-                setActiveVocab(vocab);
-                setActiveSentenceId(sentence.id); // Ensure sentence is active too
-              }}
-              onPlay={(e) => {
-                e.stopPropagation();
-                playAudio(sentence.text);
-              }}
-              onClose={(e) => {
-                e.stopPropagation();
-                setActiveSentenceId(null);
-                setActiveVocab(null);
-              }}
-            />
-          ))}
+        {/* Little Drag Handle Indicator (Visual only) */}
+        <div className="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mt-4 mb-2"></div>
 
-          {currentPage.sentences.length === 0 && (
-            <p className="text-center text-slate-600 block py-10">
-              (No text on this page)
-            </p>
-          )}
-        </div>
-      </main>
+        <main className="max-w-3xl mx-auto px-6 md:px-12 pt-4">
+          {/* Header within the card */}
+          <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-4">
+            <div className="text-slate-400 font-serif italic text-sm">
+              Chapter 1
+            </div>
+            <div className="text-slate-400 font-serif text-sm">
+              Page {currentPage.pageId}
+            </div>
+          </div>
 
-      {/* Pagination Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 bg-slate-900/90 backdrop-blur border-t border-slate-800 p-4 z-30">
-        <div className="max-w-md mx-auto flex justify-between items-center px-4">
-          <button
-            onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
-            disabled={currentPageIndex === 0}
-            className={`p-2 rounded-full transition-colors ${currentPageIndex === 0
-                ? 'text-slate-700 cursor-not-allowed'
-                : 'text-slate-400 hover:text-white hover:bg-slate-800'
-              }`}
-          >
-            <ChevronLeft size={28} />
-          </button>
+          {/* Continuous Text Block */}
+          <div className="font-serif text-xl md:text-2xl leading-[1.8] text-justify text-slate-800 tracking-wide">
+            {currentPage.sentences.map((sentence) => (
+              <SentenceSegment
+                key={sentence.id}
+                data={sentence}
+                isActive={activeSentenceId === sentence.id}
+                activeVocab={activeVocab}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleSentenceClick(sentence.id);
+                }}
+                onVocabClick={(vocab) => {
+                  setActiveVocab(vocab);
+                  setActiveSentenceId(sentence.id);
+                }}
+                onPlay={(e) => {
+                  e.stopPropagation();
+                  playAudio(sentence.text);
+                }}
+                onClose={(e) => {
+                  e.stopPropagation();
+                  setActiveSentenceId(null);
+                  setActiveVocab(null);
+                }}
+              />
+            ))}
 
-          <span className="text-sm font-medium text-slate-500">
-            {currentPageIndex + 1} / {totalPages}
-          </span>
+            {currentPage.sentences.length === 0 && (
+              <p className="text-center text-slate-400 block py-10 italic">
+                (No content)
+              </p>
+            )}
+          </div>
+        </main>
+      </div>
 
-          <button
-            onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
-            disabled={currentPageIndex === totalPages - 1}
-            className={`p-2 rounded-full transition-colors ${currentPageIndex === totalPages - 1
-                ? 'text-slate-700 cursor-not-allowed'
-                : 'text-slate-400 hover:text-white hover:bg-slate-800'
-              }`}
-          >
-            <ChevronRight size={28} />
-          </button>
-        </div>
+      {/* Pagination Floating Bar */}
+      <footer className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 bg-white/80 backdrop-blur-md border border-white/50 shadow-2xl rounded-full px-6 py-2 flex items-center gap-6">
+        <button
+          onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
+          disabled={currentPageIndex === 0}
+          className={`transition-colors flex items-center gap-1 ${currentPageIndex === 0
+              ? 'text-slate-300 cursor-not-allowed'
+              : 'text-slate-500 hover:text-indigo-600'
+            }`}
+        >
+          <ChevronLeft size={24} />
+          <span className="text-sm font-medium hidden sm:inline">Prev</span>
+        </button>
+
+        <div className="w-px h-6 bg-slate-200"></div>
+
+        <button
+          onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
+          disabled={currentPageIndex === totalPages - 1}
+          className={`transition-colors flex items-center gap-1 ${currentPageIndex === totalPages - 1
+              ? 'text-slate-300 cursor-not-allowed'
+              : 'text-indigo-600 hover:text-indigo-800'
+            }`}
+        >
+          <span className="text-sm font-medium hidden sm:inline">Next</span>
+          <ChevronRight size={24} />
+        </button>
       </footer>
     </div>
   );
