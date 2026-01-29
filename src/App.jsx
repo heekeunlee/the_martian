@@ -205,7 +205,7 @@ function App() {
 
         {/* Content Card */}
         <div
-          className="relative z-10 mt-[20vh] min-h-[75vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-sm transition-all bg-[#F9FAFB]"
+          className="relative z-10 mt-[17vh] min-h-[75vh] rounded-t-[2.5rem] pb-40 animate-in slide-in-from-bottom-16 duration-700 ease-out shadow-sm transition-all bg-[#F9FAFB]"
           style={{ marginBottom: showSubtitle ? '140px' : '0' }}
         >
           <main className="px-8 pt-10">
@@ -278,8 +278,8 @@ function App() {
               onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToPrevPage(); }}
               disabled={currentPageIndex === 0}
               className={`transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-100 ${currentPageIndex === 0
-                  ? 'text-slate-300 cursor-not-allowed'
-                  : 'text-slate-500 hover:text-[#8B5CF6]'
+                ? 'text-slate-300 cursor-not-allowed'
+                : 'text-slate-500 hover:text-[#8B5CF6]'
                 }`}
             >
               <ChevronLeft size={24} />
@@ -289,8 +289,8 @@ function App() {
             <button
               onClick={toggleAutoRead}
               className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-all transform hover:scale-110 active:scale-95 ${isAutoPlaying
-                  ? 'bg-[#FDBA74] text-[#1F2937]' // Orange when playing (Pause state)
-                  : 'bg-[#8B5CF6] text-white'     // Violet when paused (Play state)
+                ? 'bg-[#FDBA74] text-[#1F2937]' // Orange when playing (Pause state)
+                : 'bg-[#8B5CF6] text-white'     // Violet when paused (Play state)
                 }`}
             >
               {isAutoPlaying ? (
@@ -305,8 +305,8 @@ function App() {
               onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToNextPage(); }}
               disabled={currentPageIndex === totalPages - 1}
               className={`transition-colors flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-100 ${currentPageIndex === totalPages - 1
-                  ? 'text-slate-300 cursor-not-allowed'
-                  : 'text-slate-500 hover:text-[#8B5CF6]'
+                ? 'text-slate-300 cursor-not-allowed'
+                : 'text-slate-500 hover:text-[#8B5CF6]'
                 }`}
             >
               <ChevronRight size={24} />
