@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import bookData from './data/chapter1.json';
 import SentenceSegment from './components/SentenceSegment';
 import HeroHeader from './components/HeroHeader';
-import { ChevronLeft, ChevronRight, BookOpen, Play, Pause } from 'lucide-react';
+import { ChevronLeft, ChevronRight, BookOpen, Play, Pause, Languages } from 'lucide-react';
 
 function App() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -97,6 +97,11 @@ function App() {
 
       runAutoReadLoop(startIndex, autoPlaySessionRef.current);
     }
+  };
+
+  const toggleTranslationMode = (e) => {
+    e.stopPropagation();
+    setShowSubtitle(!showSubtitle);
   };
 
   const runAutoReadLoop = (index, sessionId) => {
@@ -201,7 +206,7 @@ function App() {
       </main>
 
       {/* Floating Glass Footer Control */}
-      <footer className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${showSubtitle ? 'translate-y-[200%] opacity-0' : 'translate-y-0 opacity-100'}`}>
+      <footer className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${showSubtitle ? 'translate-y-[-10px]' : 'translate-y-0'}`}>
         <div className="flex flex-col items-center gap-3">
 
           {/* Page Indicator - Detached and clean */}
@@ -210,13 +215,13 @@ function App() {
           </span>
 
           {/* Control Capsule */}
-          <div className="bg-white/70 backdrop-blur-2xl border border-white/40 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] rounded-full px-2 py-2 flex items-center gap-4 group hover:scale-[1.02] transition-transform duration-300">
+          <div className="bg-white/70 backdrop-blur-2xl border border-white/40 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] rounded-full px-4 py-2 flex items-center gap-3 group hover:scale-[1.02] transition-transform duration-300">
 
             {/* Prev */}
             <button
               onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToPrevPage(); }}
               disabled={currentPageIndex === 0}
-              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all ${currentPageIndex === 0
+              className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentPageIndex === 0
                   ? 'text-gray-300 cursor-not-allowed'
                   : 'text-gray-500 hover:bg-black/5 hover:text-black'
                 }`}
@@ -224,26 +229,42 @@ function App() {
               <ChevronLeft size={22} strokeWidth={2} />
             </button>
 
+            <div className="w-px h-6 bg-gray-300/50"></div>
+
             {/* Play/Pause Main Action */}
             <button
               onClick={toggleAutoRead}
-              className={`w-16 h-16 flex items-center justify-center rounded-full shadow-[0_8px_20px_-5px_rgba(0,0,0,0.15)] transition-all transform hover:scale-105 active:scale-95 ${isAutoPlaying
-                  ? 'bg-[#FF9500] text-white' // Apple Warm Orange for Pause
-                  : 'bg-[#1C1C1E] text-white' // Apple Black for Play
+              className={`w-12 h-12 flex items-center justify-center rounded-full shadow-sm transition-all transform active:scale-95 ${isAutoPlaying
+                  ? 'bg-[#FF9500] text-white'
+                  : 'bg-[#1C1C1E] text-white hover:bg-black'
                 }`}
             >
               {isAutoPlaying ? (
-                <Pause size={24} fill="currentColor" />
+                <Pause size={20} fill="currentColor" />
               ) : (
-                <Play size={24} fill="currentColor" className="ml-1" />
+                <Play size={20} fill="currentColor" className="ml-1" />
               )}
             </button>
+
+            {/* Translation Toggle (New Key) */}
+            <button
+              onClick={toggleTranslationMode}
+              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all active:scale-95 ${showSubtitle
+                  ? 'bg-[#007AFF] text-white shadow-md' // Active Blue
+                  : 'bg-white text-gray-400 hover:text-[#007AFF] border border-gray-100' // Inactive
+                }`}
+              title="Toggle Translation"
+            >
+              <Languages size={20} />
+            </button>
+
+            <div className="w-px h-6 bg-gray-300/50"></div>
 
             {/* Next */}
             <button
               onClick={(e) => { e.stopPropagation(); safeStopAutoPlay(); goToNextPage(); }}
               disabled={currentPageIndex === totalPages - 1}
-              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all ${currentPageIndex === totalPages - 1
+              className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentPageIndex === totalPages - 1
                   ? 'text-gray-300 cursor-not-allowed'
                   : 'text-gray-500 hover:bg-black/5 hover:text-black'
                 }`}
@@ -256,9 +277,9 @@ function App() {
 
       {/* Cinema Subtitle Mode - Apple Style */}
       {showSubtitle && currentSentence && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#1C1C1E]/90 backdrop-blur-xl border-t border-white/5 pt-8 pb-12 px-6 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#1C1C1E]/95 backdrop-blur-xl border-t border-white/5 pt-12 pb-32 px-6 animate-in slide-in-from-bottom-full duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_-20px_40px_rgba(0,0,0,0.3)]">
           <div className="max-w-[500px] mx-auto text-center">
-            <div className="w-10 h-1 bg-white/20 rounded-full mx-auto mb-6"></div>
+            <p className="text-[#98989D] text-[10px] uppercase tracking-[0.2em] font-bold mb-4">Korean Translation</p>
             <p className="text-[#F2F2F7] font-merriweather text-[1.3rem] leading-relaxed font-normal antialiased">
               {currentSentence.translation}
             </p>
