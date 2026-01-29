@@ -54,17 +54,17 @@ function App() {
 
   return (
     <div
-      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden bg-slate-900"
+      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden bg-slate-900 flex justify-center items-start"
       onClick={handleBackgroundClick}
     >
       {/* Maximum width container to mimic mobile app on desktop */}
-      <div className="max-w-md mx-auto min-h-screen relative shadow-2xl overflow-hidden" style={{ backgroundColor: '#FDFBF7' }}>
+      <div className="w-full max-w-md min-h-screen relative shadow-2xl overflow-hidden bg-slate-900">
 
         <HeroHeader title={bookData.title} />
 
         {/* Overlapping Content Card */}
         <div
-          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2rem] pb-24 animate-in slide-in-from-bottom-10 duration-500"
+          className="relative z-10 mt-[45vh] min-h-[60vh] rounded-t-[2.5rem] pb-32 animate-in slide-in-from-bottom-10 duration-500 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]"
           style={{ backgroundColor: '#FDFBF7' }}
         >
 

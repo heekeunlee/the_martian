@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroHeader = ({ title }) => {
     return (
-        <div className="fixed top-0 left-0 right-0 h-[50vh] z-0 bg-slate-900">
+        <div className="absolute top-0 left-0 right-0 h-[55vh] z-0 bg-slate-900">
             {/* Background Image */}
             <img
                 src={`${import.meta.env.BASE_URL}mars-cover.png`}
