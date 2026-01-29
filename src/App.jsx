@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import bookData from './data/chapter1.json';
 import SentenceSegment from './components/SentenceSegment';
 import HeroHeader from './components/HeroHeader';
-import { ChevronLeft, ChevronRight, Menu } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function App() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
@@ -54,97 +54,106 @@ function App() {
 
   return (
     <div
-      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden"
-      style={{ backgroundColor: '#FDFBF7' }}
+      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden bg-slate-900"
       onClick={handleBackgroundClick}
     >
-      <HeroHeader title={bookData.title} />
+      {/* Maximum width container to mimic mobile app on desktop */}
+      <div className="max-w-md mx-auto min-h-screen relative shadow-2xl overflow-hidden" style={{ backgroundColor: '#FDFBF7' }}>
 
-      {/* Overlapping Content Card */}
-      <div
-        className="relative z-10 mt-[35vh] min-h-[65vh] rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.1)] pb-24"
-        style={{ backgroundColor: '#FDFBF7' }}
-      >
+        <HeroHeader title={bookData.title} />
 
-        {/* Little Drag Handle Indicator (Visual only) */}
-        <div className="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mt-4 mb-2"></div>
+        {/* Overlapping Content Card */}
+        <div
+          className="relative z-10 mt-[42vh] min-h-[60vh] rounded-t-[2rem] pb-24 animate-in slide-in-from-bottom-10 duration-500"
+          style={{ backgroundColor: '#FDFBF7' }}
+        >
 
-        <main className="max-w-3xl mx-auto px-6 md:px-12 pt-4">
-          {/* Header within the card */}
-          <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-4">
-            <div className="text-slate-400 font-serif italic text-sm">
-              Chapter 1
+          <main className="px-6 pt-8">
+            {/* Intro Tagline Area (Matches reference) */}
+            <div className="text-center mb-8">
+              <h2 className="text-xl font-bold text-slate-900 leading-snug mb-2 break-keep">
+                하루에 단 10분만 투자하여 좋아하는<br />책으로 영어를 정복하세요
+              </h2>
+              <div className="w-10 h-1 bg-indigo-500 rounded-full mx-auto opacity-50"></div>
             </div>
-            <div className="text-slate-400 font-serif text-sm">
-              Page {currentPage.pageId}
+
+            {/* Chapter Info */}
+            <div className="flex items-center justify-between mb-6 text-xs font-serif text-slate-400 uppercase tracking-widest">
+              <span>Chapter 1</span>
+              <span>Page {currentPage.pageId}</span>
             </div>
-          </div>
 
-          {/* Continuous Text Block */}
-          <div className="font-serif text-xl md:text-2xl leading-[1.8] text-justify text-slate-800 tracking-wide">
-            {currentPage.sentences.map((sentence) => (
-              <SentenceSegment
-                key={sentence.id}
-                data={sentence}
-                isActive={activeSentenceId === sentence.id}
-                activeVocab={activeVocab}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleSentenceClick(sentence.id);
-                }}
-                onVocabClick={(vocab) => {
-                  setActiveVocab(vocab);
-                  setActiveSentenceId(sentence.id);
-                }}
-                onPlay={(e) => {
-                  e.stopPropagation();
-                  playAudio(sentence.text);
-                }}
-                onClose={(e) => {
-                  e.stopPropagation();
-                  setActiveSentenceId(null);
-                  setActiveVocab(null);
-                }}
-              />
-            ))}
+            {/* Continuous Text Block */}
+            <div className="font-serif text-[1.125rem] leading-[1.8] text-justify text-slate-800 tracking-wide mb-10">
+              {currentPage.sentences.map((sentence) => (
+                <SentenceSegment
+                  key={sentence.id}
+                  data={sentence}
+                  isActive={activeSentenceId === sentence.id}
+                  activeVocab={activeVocab}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleSentenceClick(sentence.id);
+                  }}
+                  onVocabClick={(vocab) => {
+                    setActiveVocab(vocab);
+                    setActiveSentenceId(sentence.id);
+                  }}
+                  onPlay={(e) => {
+                    e.stopPropagation();
+                    playAudio(sentence.text);
+                  }}
+                  onClose={(e) => {
+                    e.stopPropagation();
+                    setActiveSentenceId(null);
+                    setActiveVocab(null);
+                  }}
+                />
+              ))}
 
-            {currentPage.sentences.length === 0 && (
-              <p className="text-center text-slate-400 block py-10 italic">
-                (No content)
-              </p>
-            )}
+              {currentPage.sentences.length === 0 && (
+                <p className="text-center text-slate-400 block py-10 italic">
+                  (No content)
+                </p>
+              )}
+            </div>
+          </main>
+        </div>
+
+        {/* Pagination Floating Bar */}
+        <footer className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 w-[90%] max-w-[360px]">
+          <div className="bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl rounded-full px-5 py-3 flex items-center justify-between">
+            <button
+              onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
+              disabled={currentPageIndex === 0}
+              className={`transition-colors flex items-center gap-1 ${currentPageIndex === 0
+                  ? 'text-slate-300 cursor-not-allowed'
+                  : 'text-slate-600 hover:text-indigo-600'
+                }`}
+            >
+              <ChevronLeft size={22} />
+              <span className="text-sm font-bold">Prev</span>
+            </button>
+
+            <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider">
+              {currentPageIndex + 1} / {totalPages}
+            </span>
+
+            <button
+              onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
+              disabled={currentPageIndex === totalPages - 1}
+              className={`transition-colors flex items-center gap-1 ${currentPageIndex === totalPages - 1
+                  ? 'text-slate-300 cursor-not-allowed'
+                  : 'text-indigo-600 hover:text-indigo-800'
+                }`}
+            >
+              <span className="text-sm font-bold">Next</span>
+              <ChevronRight size={22} />
+            </button>
           </div>
-        </main>
+        </footer>
+
       </div>
-
-      {/* Pagination Floating Bar */}
-      <footer className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 bg-white/80 backdrop-blur-md border border-white/50 shadow-2xl rounded-full px-6 py-2 flex items-center gap-6">
-        <button
-          onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
-          disabled={currentPageIndex === 0}
-          className={`transition-colors flex items-center gap-1 ${currentPageIndex === 0
-            ? 'text-slate-300 cursor-not-allowed'
-            : 'text-slate-500 hover:text-indigo-600'
-            }`}
-        >
-          <ChevronLeft size={24} />
-          <span className="text-sm font-medium hidden sm:inline">Prev</span>
-        </button>
-
-        <div className="w-px h-6 bg-slate-200"></div>
-
-        <button
-          onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
-          disabled={currentPageIndex === totalPages - 1}
-          className={`transition-colors flex items-center gap-1 ${currentPageIndex === totalPages - 1
-            ? 'text-slate-300 cursor-not-allowed'
-            : 'text-indigo-600 hover:text-indigo-800'
-            }`}
-        >
-          <span className="text-sm font-medium hidden sm:inline">Next</span>
-          <ChevronRight size={24} />
-        </button>
-      </footer>
     </div>
   );
 }
