@@ -54,13 +54,17 @@ function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#FDFBF7] font-sans selection:bg-indigo-200 selection:text-indigo-900"
+      className="min-h-screen font-sans selection:bg-indigo-200 selection:text-indigo-900 overflow-x-hidden"
+      style={{ backgroundColor: '#FDFBF7' }}
       onClick={handleBackgroundClick}
     >
       <HeroHeader title={bookData.title} />
 
       {/* Overlapping Content Card */}
-      <div className="relative z-10 mt-[35vh] min-h-[65vh] bg-[#FDFBF7] rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.1)] pb-24">
+      <div
+        className="relative z-10 mt-[35vh] min-h-[65vh] rounded-t-[2.5rem] shadow-[0_-10px_40px_rgba(0,0,0,0.1)] pb-24"
+        style={{ backgroundColor: '#FDFBF7' }}
+      >
 
         {/* Little Drag Handle Indicator (Visual only) */}
         <div className="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mt-4 mb-2"></div>
@@ -119,8 +123,8 @@ function App() {
           onClick={(e) => { e.stopPropagation(); goToPrevPage(); }}
           disabled={currentPageIndex === 0}
           className={`transition-colors flex items-center gap-1 ${currentPageIndex === 0
-              ? 'text-slate-300 cursor-not-allowed'
-              : 'text-slate-500 hover:text-indigo-600'
+            ? 'text-slate-300 cursor-not-allowed'
+            : 'text-slate-500 hover:text-indigo-600'
             }`}
         >
           <ChevronLeft size={24} />
@@ -133,8 +137,8 @@ function App() {
           onClick={(e) => { e.stopPropagation(); goToNextPage(); }}
           disabled={currentPageIndex === totalPages - 1}
           className={`transition-colors flex items-center gap-1 ${currentPageIndex === totalPages - 1
-              ? 'text-slate-300 cursor-not-allowed'
-              : 'text-indigo-600 hover:text-indigo-800'
+            ? 'text-slate-300 cursor-not-allowed'
+            : 'text-indigo-600 hover:text-indigo-800'
             }`}
         >
           <span className="text-sm font-medium hidden sm:inline">Next</span>
